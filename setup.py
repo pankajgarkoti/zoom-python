@@ -12,7 +12,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "swagger-client"
+NAME = "zoom_client"
 VERSION = "1.0.0"
 # To install the library, run the following
 #
@@ -35,5 +35,5 @@ setup(
     include_package_data=True,
     long_description="""\
     The Zoom Meeting APIs let developers to access information from Zoom.  # noqa: E501
-    """
+    """,
 )
