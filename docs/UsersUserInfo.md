@@ -1,0 +1,16 @@
+# UsersUserInfo
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**email** | **str** | User email address. | 
+**first_name** | **str** | The user&#x27;s first name. Cannot contain more than 5 Chinese characters. | [optional] 
+**last_name** | **str** | The user&#x27;s last name. Cannot contain more than 5 Chinese characters. | [optional] 
+**display_name** | **str** | The user&#x27;s display name. Cannot contain more than 10 Chinese characters. | [optional] 
+**password** | **str** | User password. Only used for the &amp;quot;autoCreate&amp;quot; function. The password has to have a minimum of 8 characters and maximum of 32 characters. By default (basic requirement), password must have at least one letter (a, b, c..), at least one number (1, 2, 3...) and include both uppercase and lowercase letters. It should not contain only one identical character repeatedly (&#x27;11111111&#x27; or &#x27;aaaaaaaa&#x27;) and it cannot contain consecutive characters (&#x27;12345678&#x27; or &#x27;abcdefgh&#x27;).  **Note:** If the account owner or admin has enabled [enhanced password requirements](https://support.zoom.us/hc/en-us/articles/360034675592-Advanced-security-settings#h_fa9186e4-6818-4f7a-915c-2e25c19f0acd), the value provided in this field must meet those requirements. These requirements can be retrieved by calling the [**Get account settings**](/docs/api-reference/zoom-api/ma#operation/accountSettings) API and referring to the &#x60;password_requirement&#x60; field present in the &#x60;security&#x60; object. | [optional] 
+**type** | **int** | User type.    &#x60;1&#x60; - Basic.    &#x60;2&#x60; - Licensed.    &#x60;99&#x60; - None (this can only be set with &#x60;ssoCreate&#x60;). | 
+**feature** | [**UsersUserInfoFeature**](UsersUserInfoFeature.md) |  | [optional] 
+**plan_united_type** | **str** | The Zoom United type. The license option.  * &#x60;1&#x60; - Zoom United Pro-United with US/CA Unlimited.  * &#x60;2&#x60; - Zoom United Pro-United with UK/IR Unlimited.  * &#x60;4&#x60; - Zoom United Pro-United with AU/NZ Unlimited.  * &#x60;8&#x60; - Zoom United Pro-United with Global Select.  * &#x60;16&#x60; - Zoom United Pro-United with Zoom Phone Pro.  * &#x60;32&#x60; - Zoom United Biz-United with US/CA Unlimited.  * &#x60;64&#x60; - Zoom United Biz-United with UK/IR Unlimited.  * &#x60;128&#x60; - Zoom United Biz-United with AU/NZ Unlimited.  * &#x60;256&#x60; - Zoom United Biz-United with Global Select.  * &#x60;512&#x60; - Zoom United Biz-United with Zoom Phone Pro.  * &#x60;1024&#x60; - Zoom United Ent-United with US/CA Unlimited.  * &#x60;2048&#x60; - Zoom United Ent-United with UK/IR Unlimited.  * &#x60;4096&#x60; - Zoom United Ent-United with AU/NZ Unlimited.  * &#x60;8192&#x60; - Zoom United Ent-United with Global Select.  * &#x60;16384&#x60; - Zoom United Ent-United with Zoom Phone Pro.  * &#x60;32768&#x60; - Zoom United Pro-United with JP Unlimited.  * &#x60;65536&#x60; - Zoom United Biz-United with JP Unlimited.  * &#x60;131072&#x60; - Zoom United Ent-United with JP Unlimited. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

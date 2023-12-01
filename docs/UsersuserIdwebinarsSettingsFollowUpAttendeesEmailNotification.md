@@ -1,0 +1,10 @@
+# UsersuserIdwebinarsSettingsFollowUpAttendeesEmailNotification
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**enable** | **bool** | * &#x60;true&#x60;: Send follow-up email to attendees.  * &#x60;false&#x60;: Do not send follow-up email to attendees. | [optional] 
+**type** | **int** | &#x60;0&#x60; - No plan.    &#x60;1&#x60; - Send 1 day after the scheduled end date.    &#x60;2&#x60; - Send 2 days after the scheduled end date.    &#x60;3&#x60; - Send 3 days after the scheduled end date.    &#x60;4&#x60; - Send 4 days after the scheduled end date.    &#x60;5&#x60; - Send 5 days after the scheduled end date.    &#x60;6&#x60; - Send 6 days after the scheduled end date.    &#x60;7&#x60; - Send 7 days after the scheduled end date. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

@@ -1,0 +1,11 @@
+# AccountsaccountIdsettingsRecordingRecordFilesSeparately
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**active_speaker** | **bool** | Whether to record the active speaker only. | [optional] 
+**gallery_view** | **bool** | Whether to record the gallery view only. | [optional] 
+**shared_screen** | **bool** | Whether to record the shared screen only. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

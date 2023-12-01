@@ -1,0 +1,22 @@
+# InlineResponse20110Questions
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**answer_max_character** | **int** | The allowed maximum number of characters. This field only returns for &#x60;short_answer&#x60; and &#x60;long_answer&#x60; polls. | [optional] 
+**answer_min_character** | **int** | The allowed minimum number of characters. This field only returns for &#x60;short_answer&#x60; and &#x60;long_answer&#x60; polls. | [optional] 
+**answer_required** | **bool** | Whether participants must answer the question:  * &#x60;true&#x60; &amp;mdash; The participant must answer the question.  * &#x60;false&#x60; &amp;mdash; The participant does not need to answer the question. | [optional] 
+**answers** | **list[str]** | The poll question&#x27;s available answers. | [optional] 
+**case_sensitive** | **bool** | Whether the correct answer is case sensitive. This field only returns for &#x60;fill_in_the_blank&#x60; polls:  * &#x60;true&#x60; &amp;mdash; The answer is case-sensitive.  * &#x60;false&#x60; &amp;mdash; The answer is not case-sensitive. | [optional] [default to False]
+**name** | **str** | The poll question&#x27;s title. For &#x60;fill_in_the_blank&#x60; polls, this field is the poll&#x27;s question. | [optional] 
+**prompts** | [**list[InlineResponse20110Prompts]**](InlineResponse20110Prompts.md) | Information about the prompt questions. This object only returns for &#x60;matching&#x60; and &#x60;rank_order&#x60; polls. | [optional] 
+**rating_max_label** | **str** | The high score label used for the &#x60;rating_max_value&#x60; field. This field only returns for &#x60;rating_scale&#x60; polls. | [optional] 
+**rating_max_value** | **int** | The rating scale&#x27;s maximum value. This field only returns for &#x60;rating_scale&#x60; polls. | [optional] 
+**rating_min_label** | **str** | The low score label used for the &#x60;rating_min_value&#x60; field. This field only returns for &#x60;rating_scale&#x60; polls. | [optional] 
+**rating_min_value** | **int** | The rating scale&#x27;s minimum value. This field only returns for &#x60;rating_scale&#x60; polls. | [optional] 
+**right_answers** | **list[str]** | The poll question&#x27;s correct answer(s). | [optional] 
+**show_as_dropdown** | **bool** | Whether to display the radio selection as a drop-down box:  * &#x60;true&#x60; &amp;mdash; Show as a drop-down box.  * &#x60;false&#x60; &amp;mdash; Do not show as a drop-down box. | [optional] 
+**type** | **str** | The poll&#x27;s question and answer type:  * &#x60;single&#x60; &amp;mdash; Single choice.  * &#x60;multiple&#x60; &amp;mdash; Multiple choice.  * &#x60;matching&#x60; &amp;mdash; Matching.  * &#x60;rank_order&#x60; &amp;mdash; Rank order.  * &#x60;short_answer&#x60; &amp;mdash; Short answer.  * &#x60;long_answer&#x60; &amp;mdash; Long answer.  * &#x60;fill_in_the_blank&#x60; &amp;mdash; Fill in the blank.  * &#x60;rating_scale&#x60; &amp;mdash; Rating scale. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
