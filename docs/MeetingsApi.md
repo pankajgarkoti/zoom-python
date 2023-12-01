@@ -1,4 +1,4 @@
-# swagger_client.MeetingsApi
+# zoom.MeetingsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -60,23 +60,23 @@ Register up to 30 registrants at once for a meeting that requires [registration]
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | Unique identifier of the meeting (Meeting Number).
-body = swagger_client.MeetingIdBatchRegistrantsBody() # MeetingIdBatchRegistrantsBody |  (optional)
+body = zoom.MeetingIdBatchRegistrantsBody() # MeetingIdBatchRegistrantsBody |  (optional)
 
 try:
     # Perform batch registration
@@ -119,23 +119,23 @@ Polls allow the meeting host to survey attendees. Create batch [polls](https://s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | 
-body = swagger_client.MeetingIdBatchPollsBody() # MeetingIdBatchPollsBody | Batch Meeting poll object (optional)
+body = zoom.MeetingIdBatchPollsBody() # MeetingIdBatchPollsBody | Batch Meeting poll object (optional)
 
 try:
     # Perform batch poll creation
@@ -178,21 +178,21 @@ Delete a message in a live meeting, based on ID.   **Prerequisites:**  * Have Zo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, store it as a long-format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 message_id = 'message_id_example' # str | The live meeting chat message's unique identifier (UUID), in base64-encoded format.
 file_ids = 'file_ids_example' # str | The live webinar chat file's universally unique identifier (UUID), in base64-encoded format. Separate multiple values with commas. (optional)
@@ -238,21 +238,21 @@ Zoom allows users to [livestream a meeting](https://support.zoom.us/hc/en-us/art
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | Unique identifier of the meeting.
 
 try:
@@ -295,23 +295,23 @@ Get a meeting's SIP URI.  The URI consists of the meeting ID, (optional, user-su
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.MeetingIdSipDialingBody() # MeetingIdSipDialingBody |  (optional)
+body = zoom.MeetingIdSipDialingBody() # MeetingIdSipDialingBody |  (optional)
 
 try:
     # Get a meeting SIP URI with Passcode
@@ -354,21 +354,21 @@ Displays information about a meeting summary.  **Prerequisites**: * Host user ty
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | The meeting's universally unique ID (UUID). When you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the meeting UUID before making an API request.
 
 try:
@@ -411,23 +411,23 @@ Control [in-meeting](https://support.zoom.us/hc/en-us/articles/360021921032-In-M
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | The live meeting's ID.
-body = swagger_client.MeetingIdEventsBody() # MeetingIdEventsBody |  (optional)
+body = zoom.MeetingIdEventsBody() # MeetingIdEventsBody |  (optional)
 
 try:
     # Use in-meeting controls
@@ -469,21 +469,21 @@ List available [meeting templates](https://support.zoom.us/hc/en-us/articles/360
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user ID retrievable from the [List users](/api-reference/zoom-api/methods#operation/users) API.
 
 try:
@@ -526,21 +526,21 @@ List past meeting's poll results
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the meeting UUID before making an API request.
 
 try:
@@ -583,21 +583,21 @@ The question &amp; answer (Q&amp;A) feature for Zoom Meetings lets attendees ask
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the meeting UUID before making an API request.
 
 try:
@@ -640,21 +640,21 @@ Generates a list of all meeting summaries for an account.  **Prerequisites** * H
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 next_page_token = 'next_page_token_example' # str | The next page token paginates through a large set of results. A next page token returns whenever the set of available results exceeds the current page size. The expiration period for this token is 15 minutes. (optional)
 _from = '2013-10-20T19:20:30+01:00' # datetime | The start date in `yyyy-MM-dd'T'HH:mm:ss'Z'` UTC format used to retrieve the creation date range of the meeting summaries. (optional)
@@ -703,21 +703,21 @@ Retrieve tha given meeting's details.        **Scopes:** `meeting:read`,`meeting
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, store it as a long format integer and **not** an integer. Meeting IDs can be more than 10 digits.
 occurrence_id = 'occurrence_id_example' # str | Meeting occurrence ID. Provide this field to view meeting details of a particular occurrence of the [recurring meeting](https://support.zoom.us/hc/en-us/articles/214973206-Scheduling-Recurring-Meetings). (optional)
 show_previous_occurrences = true # bool | Set this field's value to `true` to view meeting details of all previous occurrences of a [recurring meeting](https://support.zoom.us/hc/en-us/articles/214973206-Scheduling-Recurring-Meetings).  (optional)
@@ -764,23 +764,23 @@ Create a meeting
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UserIdMeetingsBody() # UserIdMeetingsBody | Meeting object. (optional)
+body = zoom.UserIdMeetingsBody() # UserIdMeetingsBody | Meeting object. (optional)
 
 try:
     # Create a meeting
@@ -823,21 +823,21 @@ Delete a meeting.           **Scopes:** `meeting:write:admin`,`meeting:write`  *
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 schedule_for_reminder = true # bool | `true`: Notify host and alternative host about the meeting cancellation via email. `false`: Do not send any email notification. (optional)
@@ -885,21 +885,21 @@ Retrieve the meeting invitation note for a specific meeting.  **Scopes:** `meeti
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 
 try:
@@ -942,23 +942,23 @@ Create a batch of invitation links for a meeting.    **Scopes:** `meeting:write:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.InviteLinks() # InviteLinks |  (optional)
+body = zoom.InviteLinks() # InviteLinks |  (optional)
 
 try:
     # Create meeting's invite links
@@ -1001,23 +1001,23 @@ Zoom allows users to [livestream a meeting](https://support.zoom.us/hc/en-us/art
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.LivestreamStatusBody() # LivestreamStatusBody | Meeting (optional)
+body = zoom.LivestreamStatusBody() # LivestreamStatusBody | Meeting (optional)
 
 try:
     # Update Live Stream Status
@@ -1059,23 +1059,23 @@ Update a meeting's livestream information. Zoom allows users to [livestream a me
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.MeetingIdLivestreamBody() # MeetingIdLivestreamBody | Meeting (optional)
+body = zoom.MeetingIdLivestreamBody() # MeetingIdLivestreamBody | Meeting (optional)
 
 try:
     # Update a livestream
@@ -1117,21 +1117,21 @@ Get a meeting's join token to allow live streaming. The join token allows a reco
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 
 try:
@@ -1174,21 +1174,21 @@ Get a meeting's archive token to allow local archiving. The archive token allows
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 
 try:
@@ -1231,21 +1231,21 @@ Get a meeting's join token to allow for local recording. The join token lets a r
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 
 try:
@@ -1288,23 +1288,23 @@ Polls allow the meeting host to survey attendees. Create a [poll](https://suppor
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.MeetingAndWebinarPollingObject() # MeetingAndWebinarPollingObject | Meeting poll object (optional)
+body = zoom.MeetingAndWebinarPollingObject() # MeetingAndWebinarPollingObject | Meeting poll object (optional)
 
 try:
     # Create a meeting poll
@@ -1347,21 +1347,21 @@ Polls allow the meeting host to survey attendees. Delete a meeting [poll](https:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 poll_id = 'poll_id_example' # str | The poll ID
 
@@ -1405,21 +1405,21 @@ Polls allow the meeting host to survey attendees. Retrieve information about a s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 poll_id = 'poll_id_example' # str | The poll ID
 
@@ -1464,24 +1464,24 @@ Polls allow the meeting host to survey attendees. Update information of a specif
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 poll_id = 'poll_id_example' # str | The poll ID
-body = swagger_client.MeetingAndWebinarPollingObject2() # MeetingAndWebinarPollingObject2 | Meeting Poll (optional)
+body = zoom.MeetingAndWebinarPollingObject2() # MeetingAndWebinarPollingObject2 | Meeting Poll (optional)
 
 try:
     # Update a meeting poll
@@ -1524,21 +1524,21 @@ Polls allow the meeting host to survey attendees. List all [polls](https://suppo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 anonymous = true # bool | Whether to query for polls with the **Anonymous** option enabled:  * `true` &mdash; Query for polls with the **Anonymous** option enabled.  * `false` &mdash; Do not query for polls with the **Anonymous** option enabled. (optional)
 
@@ -1583,23 +1583,23 @@ Create and submit a user's registration to a meeting. See [Customizing webinar r
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.MeetingIdRegistrantsBody() # MeetingIdRegistrantsBody |  (optional)
+body = zoom.MeetingIdRegistrantsBody() # MeetingIdRegistrantsBody |  (optional)
 occurrence_ids = 'occurrence_ids_example' # str | A comma-separated list of meeting occurrence IDs. You can get this value with the [Get a meeting](/docs/api-reference/zoom-api/methods#operation/meeting) API. (optional)
 
 try:
@@ -1644,21 +1644,21 @@ Retrieve details on a specific user who has registered for the meeting. A host o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 registrant_id = 'registrant_id_example' # str | The registrant ID.
 
@@ -1703,23 +1703,23 @@ Update registration questions that will be displayed to users while [registering
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.MeetingRegistrantQuestions1() # MeetingRegistrantQuestions1 | Meeting Registrant Questions (optional)
+body = zoom.MeetingRegistrantQuestions1() # MeetingRegistrantQuestions1 | Meeting Registrant Questions (optional)
 
 try:
     # Update registration questions
@@ -1761,23 +1761,23 @@ Update a meeting registrant's status by either approving, cancelling or denying 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.RegistrantsStatusBody1() # RegistrantsStatusBody1 |  (optional)
+body = zoom.RegistrantsStatusBody1() # RegistrantsStatusBody1 |  (optional)
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 
 try:
@@ -1821,21 +1821,21 @@ A host or a user with admin permission can require [registration for a Zoom meet
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 status = 'approved' # str | Query by the registrant's status.  * `pending` - The registration is pending.  * `approved` - The registrant is approved.  * `denied` - The registration is denied. (optional) (default to approved)
@@ -1888,21 +1888,21 @@ List registration questions that will be displayed to users while [registering f
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 
 try:
@@ -1945,23 +1945,23 @@ Update the status of a meeting.           **Scopes:** `meeting:write:admin`,`mee
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
-body = swagger_client.MeetingIdStatusBody() # MeetingIdStatusBody |  (optional)
+body = zoom.MeetingIdStatusBody() # MeetingIdStatusBody |  (optional)
 
 try:
     # Update meeting status
@@ -2003,21 +2003,21 @@ Delete a [meeting survey](https://support.zoom.us/hc/en-us/articles/440496906062
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 
 try:
@@ -2059,21 +2059,21 @@ Display information about a [meeting survey](https://support.zoom.us/hc/en-us/ar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, store it as a long-format integer and **not** a simple integer. Meeting IDs can be more than 10 digits.
 
 try:
@@ -2116,23 +2116,23 @@ Update a [meeting survey](https://support.zoom.us/hc/en-us/articles/440496906062
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, store it as a long-format integer and **not** a simple integer. Meeting IDs can be over 10 digits.
-body = swagger_client.MeetingSurveyObject1() # MeetingSurveyObject1 |  (optional)
+body = zoom.MeetingSurveyObject1() # MeetingSurveyObject1 |  (optional)
 
 try:
     # Update a meeting survey
@@ -2174,23 +2174,23 @@ Create a meeting template from an existing meeting.     **Scopes:** `meeting:wri
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user ID retrievable from the [List users](/api-reference/zoom-api/methods#operation/users) API.
-body = swagger_client.UserIdMeetingTemplatesBody() # UserIdMeetingTemplatesBody |  (optional)
+body = zoom.UserIdMeetingTemplatesBody() # UserIdMeetingTemplatesBody |  (optional)
 
 try:
     # Create a meeting template from an existing meeting
@@ -2233,21 +2233,21 @@ Get a meeting's [closed caption token (caption URL)](https://support.zoom.us/hc/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, you must store it as a long format integer and **not** an integer. Meeting IDs can exceed 10 digits.
 type = 'closed_caption_token' # str | The meeting token type:  * `closed_caption_token` &mdash; The third-party closed caption API token.   This defaults to `closed_caption_token`. (optional) (default to closed_caption_token)
 
@@ -2292,23 +2292,23 @@ Update meeting details.  **Note**  * This API has a rate limit of **100 requests
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The meeting's ID.    When storing this value in your database, store it as a long format integer and **not** an integer. Meeting IDs can be greater than 10 digits.
-body = swagger_client.MeetingsMeetingIdBody() # MeetingsMeetingIdBody | Meeting (optional)
+body = zoom.MeetingsMeetingIdBody() # MeetingsMeetingIdBody | Meeting (optional)
 occurrence_id = 'occurrence_id_example' # str | Meeting occurrence ID. Support change of agenda, `start_time`, duration, or settings {`host_video`, `participant_video`, `join_before_host`, `mute_upon_entry`, `waiting_room`, `watermark`, `auto_recording`}. (optional)
 
 try:
@@ -2352,21 +2352,21 @@ Delete a meeting registrant.           **Scopes:** `meeting:write:admin`,`meetin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 56 # int | The meeting ID.
 registrant_id = 'registrant_id_example' # str | The meeting registrant ID.
 occurrence_id = 'occurrence_id_example' # str | The meeting occurrence ID. (optional)
@@ -2412,21 +2412,21 @@ List a meeting host user's scheduled meetings. For user-level apps, pass [the `m
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 type = 'scheduled' # str | The type of meeting.  * `scheduled` - All valid previous (unexpired) meetings, live meetings, and upcoming scheduled meetings.  * `live` - All the ongoing meetings.  * `upcoming` - All upcoming meetings, including live meetings.  * `upcoming_meetings` - All upcoming meetings, including live meetings.  * `previous_meetings` - All the previous meetings. (optional) (default to scheduled)
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
@@ -2481,22 +2481,22 @@ Get information about a past meeting.      **Scopes:** `meeting:read:admin`,`mee
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
-meeting_id = swagger_client.MeetingId3() # MeetingId3 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
+meeting_id = zoom.MeetingId3() # MeetingId3 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
 
 try:
     # Get past meeting details
@@ -2538,21 +2538,21 @@ Retrieve information on participants from a past meeting. Note the API doesn't r
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the meeting UUID before making an API request.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 next_page_token = 'next_page_token_example' # str | Use the next page token to paginate through large result sets. A next page token is returned whenever the set of available results exceeds the current page size. This token's expiration period is 15 minutes. (optional)
@@ -2599,21 +2599,21 @@ Return a list of past meeting instances.      **Scopes:** `meeting:read:admin`,`
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.MeetingsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.MeetingsApi(zoom.ApiClient(configuration))
 meeting_id = 789 # int | The past meeting's ID.
 
 try:

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idsettings_chat_search_and_send_animated_gif_images import AccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idsettings_chat_search_and_send_animated_gif_images import AccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages(unittest.T
     def testAccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages(self):
         """Test AccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idsettings_chat_search_and_send_animated_gif_images.AccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages()  # noqa: E501
+        # model = zoom.models.accountsaccount_idsettings_chat_search_and_send_animated_gif_images.AccountsaccountIdsettingsChatSearchAndSendAnimatedGifImages()  # noqa: E501
         pass
 
 

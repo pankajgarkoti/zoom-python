@@ -1,4 +1,4 @@
-# swagger_client.SIPPhoneApi
+# zoom.SIPPhoneApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -20,22 +20,22 @@ Zoom's Phone System Integration (PSI), also referred as SIP phones, enables an o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SIPPhoneApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SipPhonesBody() # SipPhonesBody |  (optional)
+api_instance = zoom.SIPPhoneApi(zoom.ApiClient(configuration))
+body = zoom.SipPhonesBody() # SipPhonesBody |  (optional)
 
 try:
     # Enable SIP phone
@@ -77,21 +77,21 @@ Use this API to delete a Zoom account's SIP phone.    **Prerequisites**:  * Curr
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SIPPhoneApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.SIPPhoneApi(zoom.ApiClient(configuration))
 phone_id = 'phone_id_example' # str | The SIP phone ID. It can be retrieved from the List SIP Phones API.
 
 try:
@@ -133,21 +133,21 @@ Zoom's Phone System Integration (PSI), also referred as SIP phones, enables an o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SIPPhoneApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.SIPPhoneApi(zoom.ApiClient(configuration))
 page_number = 1 # int | **Deprecated.** We will no longer support this field in a future release. Instead, use the `next_page_token` for pagination. (optional) (default to 1)
 search_key = 'search_key_example' # str | User name or email address of a user. If this parameter is provided, only the SIP phone system integration enabled for that specific user will be returned. Otherwise, all SIP phones on an account will be returned. (optional)
 page_size = 56 # int | The number of records returned within a single API call. (optional)
@@ -196,23 +196,23 @@ Zoom's Phone System Integration (PSI), also referred as SIP phones, enables an o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SIPPhoneApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.SIPPhoneApi(zoom.ApiClient(configuration))
 phone_id = 'phone_id_example' # str | The SIP phone ID. This can be retrieved from the List SIP Phones API.
-body = swagger_client.SipPhonesPhoneIdBody() # SipPhonesPhoneIdBody |  (optional)
+body = zoom.SipPhonesPhoneIdBody() # SipPhonesPhoneIdBody |  (optional)
 
 try:
     # Update SIP phone

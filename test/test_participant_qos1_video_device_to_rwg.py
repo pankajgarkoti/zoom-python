@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.participant_qos1_video_device_to_rwg import ParticipantQOS1VideoDeviceToRwg  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.participant_qos1_video_device_to_rwg import ParticipantQOS1VideoDeviceToRwg  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestParticipantQOS1VideoDeviceToRwg(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestParticipantQOS1VideoDeviceToRwg(unittest.TestCase):
     def testParticipantQOS1VideoDeviceToRwg(self):
         """Test ParticipantQOS1VideoDeviceToRwg"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.participant_qos1_video_device_to_rwg.ParticipantQOS1VideoDeviceToRwg()  # noqa: E501
+        # model = zoom.models.participant_qos1_video_device_to_rwg.ParticipantQOS1VideoDeviceToRwg()  # noqa: E501
         pass
 
 

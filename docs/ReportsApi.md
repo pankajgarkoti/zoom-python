@@ -1,4 +1,4 @@
-# swagger_client.ReportsApi
+# zoom.ReportsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -34,21 +34,21 @@ Get department billing invoices reports for a specific billing period. Provide t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 billing_id = 'billing_id_example' # str | Unique Identifier of the Billing Report. Retrieve this ID from the response of **Get Billing Reports** API request.   
 
 try:
@@ -91,21 +91,21 @@ Get department billing reports of a Zoom account.  **Prerequisites:**     * Pro 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 
 try:
     # Get billing reports
@@ -144,21 +144,21 @@ Retrieve cloud recording usage report for a specified period. You can only get c
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 _from = '2013-10-20' # date | Start date in 'yyyy-mm-dd' format. The date range defined by the &quot;from&quot; and &quot;to&quot; parameters should only be one month as the report includes only one month worth of data at once.
 to = '2013-10-20' # date | End date.
 group_id = 'group_id_example' # str | The group ID. To get a group ID, use the [**List groups**](/api-reference/zoom-api/methods#operation/groups) API.    **Note:** The API response will only contain users who are members of the queried group ID. (optional)
@@ -205,21 +205,21 @@ Retrieve daily report to access the account-wide usage of Zoom services for each
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 year = 56 # int | Year for this report (optional)
 month = 56 # int | Month for this report (optional)
 group_id = 'group_id_example' # str | The group ID. To get a group ID, use the [**List groups**](/api-reference/zoom-api/methods#operation/groups) API.    **Note:** The API response will only contain users who are members of the queried group ID. (optional)
@@ -266,22 +266,22 @@ Get a detailed report for a past meeting.      **Prerequisites:**     * Pro or a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
-meeting_id = swagger_client.MeetingId4() # MeetingId4 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
+meeting_id = zoom.MeetingId4() # MeetingId4 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
 
 try:
     # Get meeting detail reports
@@ -323,21 +323,21 @@ Return a report of a past meeting with two or more participants, including the h
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 meeting_id = 'meeting_id_example' # str | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the meeting UUID before making an API request.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 next_page_token = 'next_page_token_example' # str | Use the next page token to paginate through large result sets. A next page token is returned whenever the set of available results exceeds the current page size. This token's expiration period is 15 minutes. (optional)
@@ -386,22 +386,22 @@ Use this API to get a report of [poll](https://support.zoom.us/hc/en-us/articles
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
-meeting_id = swagger_client.MeetingId5() # MeetingId5 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
+meeting_id = zoom.MeetingId5() # MeetingId5 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
 
 try:
     # Get meeting poll reports
@@ -443,22 +443,22 @@ The question &amp; answer (Q&amp;A) feature for meetings lets attendees ask ques
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
-meeting_id = swagger_client.MeetingId6() # MeetingId6 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
+meeting_id = zoom.MeetingId6() # MeetingId6 | The meeting's ID or universally unique ID (UUID).  * If you provide a meeting ID, the API will return a response for the latest meeting instance.  * If you provide a meeting UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the meeting UUID before making an API request.
 
 try:
     # Get meeting Q&A report
@@ -500,22 +500,22 @@ Retrieve [report](https://support.zoom.us/hc/en-us/articles/216378603-Meeting-Re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId1() # UserId1 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId1() # UserId1 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 _from = '2013-10-20' # date | Start date in 'yyyy-mm-dd' format. The date range defined by the &quot;from&quot; and &quot;to&quot; parameters should only be one month as the report includes only one month worth of data at once.
 to = '2013-10-20' # date | End date.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
@@ -567,21 +567,21 @@ The [Operations Logs](https://support.zoom.us/hc/en-us/articles/360032748331-Ope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 _from = '2013-10-20' # date | Start date in 'yyyy-mm-dd' format. The date range defined by the &quot;from&quot; and &quot;to&quot; parameters should only be one month as the report includes only one month worth of data at once.
 to = '2013-10-20' # date | End date.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
@@ -632,21 +632,21 @@ Retrieve a list of sign in / sign out activity logs [report](https://support.zoo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 _from = '2013-10-20' # date | Start date for which you would like to view the activity logs report. Using the `from` and `to` parameters, specify a monthly date range for the report as the API only provides one month worth of data in one request. The specified date range should fall within the last six months. (optional)
 to = '2013-10-20' # date | End date up to which you would like to view the activity logs report. (optional)
 page_size = 56 # int | The number of records to be returned within a single API call (optional)
@@ -695,21 +695,21 @@ The [telephone report](https://support.zoom.us/hc/en-us/articles/206514816-Telep
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 _from = '2013-10-20' # date | Start date in 'yyyy-mm-dd' format. The date range defined by the &quot;from&quot; and &quot;to&quot; parameters should only be one month as the report includes only one month worth of data at once.
 to = '2013-10-20' # date | End date.
 type = '1' # str | Audio types:    `1` - Toll-free Call-in &amp; Call-out.    `2` - Toll      `3` - SIP Connected Audio (optional) (default to 1)
@@ -764,21 +764,21 @@ Use this API to list upcoming meeting and/or webinar events within a specified p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 _from = '2013-10-20' # date | Start date in 'yyyy-mm-dd' format. The date range defined by the &quot;from&quot; and &quot;to&quot; parameters should only be one month as the report includes only one month worth of data at once.
 to = '2013-10-20' # date | End date.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
@@ -831,21 +831,21 @@ A user is considered to be an active host during the month specified in the &quo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 _from = '2013-10-20' # date | Start date in 'yyyy-mm-dd' format. The date range defined by the &quot;from&quot; and &quot;to&quot; parameters should only be one month as the report includes only one month worth of data at once.
 to = '2013-10-20' # date | End date.
 type = 'type_example' # str | Active or inactive hosts.    `active` - Active hosts.     `inactive` - Inactive hosts. (optional)
@@ -900,21 +900,21 @@ Retrieve a [report](https://support.zoom.us/hc/en-us/articles/201393719-Webinar-
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API will return a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the webinar UUID before making an API request.
 
 try:
@@ -957,21 +957,21 @@ Get a detailed report on each webinar attendee. You can get webinar participant 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API will return a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the webinar UUID before making an API request.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 next_page_token = 'next_page_token_example' # str | Use the next page token to paginate through large result sets. A next page token is returned whenever the set of available results exceeds the current page size. This token's expiration period is 15 minutes. (optional)
@@ -1020,21 +1020,21 @@ Retrieve a report on past [webinar polls](https://support.zoom.us/hc/en-us/artic
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API will return a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** double-encode the webinar UUID before making an API request.
 
 try:
@@ -1077,21 +1077,21 @@ The Question &amp; Answer (Q&amp;A) feature for webinars allows attendees to ask
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ReportsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API will return a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://marketplace.zoom.us/docs/api-reference/using-zoom-apis/#meeting-id-and-uuid) the webinar UUID before making an API request.
 
 try:

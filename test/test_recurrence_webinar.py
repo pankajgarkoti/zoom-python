@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.recurrence_webinar import RecurrenceWebinar  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.recurrence_webinar import RecurrenceWebinar  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestRecurrenceWebinar(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRecurrenceWebinar(unittest.TestCase):
     def testRecurrenceWebinar(self):
         """Test RecurrenceWebinar"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.recurrence_webinar.RecurrenceWebinar()  # noqa: E501
+        # model = zoom.models.recurrence_webinar.RecurrenceWebinar()  # noqa: E501
         pass
 
 

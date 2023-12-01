@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.accounts_api import AccountsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.api.accounts_api import AccountsApi  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsApi(unittest.TestCase):

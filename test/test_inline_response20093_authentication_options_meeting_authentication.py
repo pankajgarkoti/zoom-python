@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20093_authentication_options_meeting_authentication import InlineResponse20093AuthenticationOptionsMeetingAuthentication  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20093_authentication_options_meeting_authentication import InlineResponse20093AuthenticationOptionsMeetingAuthentication  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20093AuthenticationOptionsMeetingAuthentication(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20093AuthenticationOptionsMeetingAuthentication(unittest
     def testInlineResponse20093AuthenticationOptionsMeetingAuthentication(self):
         """Test InlineResponse20093AuthenticationOptionsMeetingAuthentication"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20093_authentication_options_meeting_authentication.InlineResponse20093AuthenticationOptionsMeetingAuthentication()  # noqa: E501
+        # model = zoom.models.inline_response20093_authentication_options_meeting_authentication.InlineResponse20093AuthenticationOptionsMeetingAuthentication()  # noqa: E501
         pass
 
 

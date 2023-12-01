@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.im_groups_api import IMGroupsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.api.im_groups_api import IMGroupsApi  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestIMGroupsApi(unittest.TestCase):

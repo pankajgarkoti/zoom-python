@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.usersuser_idwebinars_settings_follow_up_absentees_email_notification import UsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.usersuser_idwebinars_settings_follow_up_absentees_email_notification import UsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestUsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification(unittest
     def testUsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification(self):
         """Test UsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.usersuser_idwebinars_settings_follow_up_absentees_email_notification.UsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification()  # noqa: E501
+        # model = zoom.models.usersuser_idwebinars_settings_follow_up_absentees_email_notification.UsersuserIdwebinarsSettingsFollowUpAbsenteesEmailNotification()  # noqa: E501
         pass
 
 

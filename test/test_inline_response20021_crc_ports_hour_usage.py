@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20021_crc_ports_hour_usage import InlineResponse20021CrcPortsHourUsage  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20021_crc_ports_hour_usage import InlineResponse20021CrcPortsHourUsage  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20021CrcPortsHourUsage(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20021CrcPortsHourUsage(unittest.TestCase):
     def testInlineResponse20021CrcPortsHourUsage(self):
         """Test InlineResponse20021CrcPortsHourUsage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20021_crc_ports_hour_usage.InlineResponse20021CrcPortsHourUsage()  # noqa: E501
+        # model = zoom.models.inline_response20021_crc_ports_hour_usage.InlineResponse20021CrcPortsHourUsage()  # noqa: E501
         pass
 
 

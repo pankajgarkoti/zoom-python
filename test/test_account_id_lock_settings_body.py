@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.account_id_lock_settings_body import AccountIdLockSettingsBody  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.account_id_lock_settings_body import AccountIdLockSettingsBody  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountIdLockSettingsBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountIdLockSettingsBody(unittest.TestCase):
     def testAccountIdLockSettingsBody(self):
         """Test AccountIdLockSettingsBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.account_id_lock_settings_body.AccountIdLockSettingsBody()  # noqa: E501
+        # model = zoom.models.account_id_lock_settings_body.AccountIdLockSettingsBody()  # noqa: E501
         pass
 
 

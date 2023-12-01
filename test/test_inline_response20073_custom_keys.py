@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20073_custom_keys import InlineResponse20073CustomKeys  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20073_custom_keys import InlineResponse20073CustomKeys  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20073CustomKeys(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20073CustomKeys(unittest.TestCase):
     def testInlineResponse20073CustomKeys(self):
         """Test InlineResponse20073CustomKeys"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20073_custom_keys.InlineResponse20073CustomKeys()  # noqa: E501
+        # model = zoom.models.inline_response20073_custom_keys.InlineResponse20073CustomKeys()  # noqa: E501
         pass
 
 

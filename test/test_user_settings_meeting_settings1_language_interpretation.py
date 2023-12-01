@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.user_settings_meeting_settings1_language_interpretation import UserSettingsMeetingSettings1LanguageInterpretation  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.user_settings_meeting_settings1_language_interpretation import UserSettingsMeetingSettings1LanguageInterpretation  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestUserSettingsMeetingSettings1LanguageInterpretation(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUserSettingsMeetingSettings1LanguageInterpretation(unittest.TestCase):
     def testUserSettingsMeetingSettings1LanguageInterpretation(self):
         """Test UserSettingsMeetingSettings1LanguageInterpretation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.user_settings_meeting_settings1_language_interpretation.UserSettingsMeetingSettings1LanguageInterpretation()  # noqa: E501
+        # model = zoom.models.user_settings_meeting_settings1_language_interpretation.UserSettingsMeetingSettings1LanguageInterpretation()  # noqa: E501
         pass
 
 

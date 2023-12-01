@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response2002_meeting_security_waiting_room_options import InlineResponse2002MeetingSecurityWaitingRoomOptions  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response2002_meeting_security_waiting_room_options import InlineResponse2002MeetingSecurityWaitingRoomOptions  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse2002MeetingSecurityWaitingRoomOptions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse2002MeetingSecurityWaitingRoomOptions(unittest.TestCase)
     def testInlineResponse2002MeetingSecurityWaitingRoomOptions(self):
         """Test InlineResponse2002MeetingSecurityWaitingRoomOptions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response2002_meeting_security_waiting_room_options.InlineResponse2002MeetingSecurityWaitingRoomOptions()  # noqa: E501
+        # model = zoom.models.inline_response2002_meeting_security_waiting_room_options.InlineResponse2002MeetingSecurityWaitingRoomOptions()  # noqa: E501
         pass
 
 

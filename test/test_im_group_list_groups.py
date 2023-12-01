@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.im_group_list_groups import IMGroupListGroups  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.im_group_list_groups import IMGroupListGroups  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestIMGroupListGroups(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestIMGroupListGroups(unittest.TestCase):
     def testIMGroupListGroups(self):
         """Test IMGroupListGroups"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.im_group_list_groups.IMGroupListGroups()  # noqa: E501
+        # model = zoom.models.im_group_list_groups.IMGroupListGroups()  # noqa: E501
         pass
 
 

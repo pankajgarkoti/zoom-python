@@ -1,4 +1,4 @@
-# swagger_client.DevicesApi
+# zoom.DevicesApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -22,22 +22,22 @@ This Device API lets you add a new device to Zoom Account.   **Scope:** `device:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DevicesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DevicesBody() # DevicesBody |  (optional)
+api_instance = zoom.DevicesApi(zoom.ApiClient(configuration))
+body = zoom.DevicesBody() # DevicesBody |  (optional)
 
 try:
     # Add new device
@@ -78,23 +78,23 @@ This Device API lets you change device association from one Zoom Room to another
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.DevicesApi(zoom.ApiClient(configuration))
 device_id = 'device_id_example' # str | Unique identifier of the device.
-body = swagger_client.DeviceIdAssignmentBody() # DeviceIdAssignmentBody |  (optional)
+body = zoom.DeviceIdAssignmentBody() # DeviceIdAssignmentBody |  (optional)
 
 try:
     # Change device association
@@ -136,21 +136,21 @@ Delete a device from a Zoom account.   **Prerequisites:** * Device must be enrol
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.DevicesApi(zoom.ApiClient(configuration))
 device_id = 'device_id_example' # str | Unique identifier of the device.
 
 try:
@@ -192,21 +192,21 @@ Retrieve a device's details.  **Scopes:** `device:read:admin`,`device:write:admi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.DevicesApi(zoom.ApiClient(configuration))
 device_id = 'device_id_example' # str | The device's unique identifier.
 
 try:
@@ -249,21 +249,21 @@ This API lets you list devices.     **Scopes:** `device:read:admin`,`device:writ
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.DevicesApi(zoom.ApiClient(configuration))
 search_text = 'search_text_example' # str | Filter devices by name or serial number. (optional)
 platform_os = 'platform_os_example' # str | Filter devices by platform operating system. (optional)
 is_enrolled_in_zdm = true # bool | Filter devices by enrollment of ZDM (Zoom Device Management). (optional) (default to true)
@@ -322,23 +322,23 @@ Change device name.   **Prerequisites:** * Device must be enrolled in ZMD (Zoom 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.DevicesApi(zoom.ApiClient(configuration))
 device_id = 'device_id_example' # str | Unique identifier of the device.
-body = swagger_client.DevicesDeviceIdBody() # DevicesDeviceIdBody |  (optional)
+body = zoom.DevicesDeviceIdBody() # DevicesDeviceIdBody |  (optional)
 
 try:
     # Change device 

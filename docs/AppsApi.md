@@ -1,4 +1,4 @@
-# swagger_client.AppsApi
+# zoom.AppsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -18,22 +18,22 @@ Create an app deeplink.      **Scopes:** `app:deeplink:write`,`app:deeplink:writ
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.AppsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ZoomappDeeplinkBody() # ZoomappDeeplinkBody |  (optional)
+api_instance = zoom.AppsApi(zoom.ApiClient(configuration))
+body = zoom.ZoomappDeeplinkBody() # ZoomappDeeplinkBody |  (optional)
 
 try:
     # Generate an app deeplink
@@ -75,22 +75,22 @@ Send app notifications to the Zoom \"Activity Center\". (Note: This API only sup
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.AppsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AppNotificationsBody() # AppNotificationsBody |  (optional)
+api_instance = zoom.AppsApi(zoom.ApiClient(configuration))
+body = zoom.AppNotificationsBody() # AppNotificationsBody |  (optional)
 
 try:
     # Send app notifications

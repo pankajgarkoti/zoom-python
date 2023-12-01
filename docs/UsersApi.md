@@ -1,4 +1,4 @@
-# swagger_client.UsersApi
+# zoom.UsersApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -49,22 +49,22 @@ Bulk update features.     **Scopes:** `user:write:admin`  **[Rate Limit Label](h
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UsersFeaturesBody() # UsersFeaturesBody | User feature (optional)
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
+body = zoom.UsersFeaturesBody() # UsersFeaturesBody | User feature (optional)
 
 try:
     # Bulk update feature
@@ -106,21 +106,21 @@ Use this API to delete a user's Virtual Background files. For user-level apps, p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's ID. To get a user's ID, use the [**List users**](/docs/api-reference/zoom-api/ma#operation/users) API. For user-level apps, pass the `me` value instead of the user ID value.
 file_ids = 'file_ids_example' # str | A comma-separated list of the Virtual Background file IDs to delete. (optional)
 
@@ -164,22 +164,22 @@ Get collaboration device detail. For user-level apps, pass [the `me` value](http
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId8() # UserId8 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId8() # UserId8 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 collaboration_device_id = 'collaboration_device_id_example' # str | The collaboration deviceId.
 
 try:
@@ -223,21 +223,21 @@ Retrieve a user's [meeting template](https://support.zoom.us/hc/en-us/articles/3
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 meeting_template_id = 'meeting_template_id_example' # str | The meeting template ID.
 
@@ -282,22 +282,22 @@ List a user's collaboration devices. For user-level apps, pass [the `me` value](
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId7() # UserId7 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId7() # UserId7 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 
 try:
     # List a user's collaboration devices
@@ -339,23 +339,23 @@ Update a user's presence status. For user-level apps, pass [the `me` value](http
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | 
-body = swagger_client.UserIdPresenceStatusBody() # UserIdPresenceStatusBody |  (optional)
+body = zoom.UserIdPresenceStatusBody() # UserIdPresenceStatusBody |  (optional)
 
 try:
     # Update a user's presence status
@@ -397,21 +397,21 @@ Use this API to [upload a Virtual Background files](https://support.zoom.us/hc/e
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's ID. To get a user's ID, use the [**List users**](/api-reference/zoom-api/ma#operation/users) API. For user-level apps, pass the `me` value instead of the user ID value.
 file = 'file_example' # str |  (optional)
 
@@ -456,21 +456,21 @@ View a user's information on a Zoom account. For user-level apps, pass [the `me`
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 login_type = 56 # int | The user's login method.  * `0` - Facebook OAuth  * `1` - Google OAuth.  * `24` - Apple OAuth.  * `27` - Microsoft OAuth.  * `97` - Mobile device.  * `98` - RingCentral OAuth.  * `99` - API user.  * `100` - Zoom Work email.  * `101` - Single Sign-On (SSO).   These login methods are only available in China.  * `11` - Phone number.  * `21` - WeChat.  * `23` - Alipay. (optional)
 encrypted_email = false # bool | Whether the email address passed for the `userId` value is an encrypted email address.    * `true` - The email address is encrypted.   * `false` - The email address is not encrypted.    If you do not query this parameter, this value defaults to null (`false`). (optional) (default to false)
@@ -519,23 +519,23 @@ Assign assistants to a user. In the request body, provide either the user's ID o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UserAssistantsList() # UserAssistantsList | User assistant. (optional)
+body = zoom.UserAssistantsList() # UserAssistantsList | User assistant. (optional)
 
 try:
     # Add assistants
@@ -578,21 +578,21 @@ Delete a specific assistant of a user. For user-level apps, pass [the `me` value
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 assistant_id = 'assistant_id_example' # str | Assistant ID.
 
@@ -636,21 +636,21 @@ List a user's assistants. For user-level apps, pass [the `me` value](https://dev
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -693,21 +693,21 @@ Delete all of the current user's assistants. For user-level apps, pass [the `me`
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -749,22 +749,22 @@ Add a new user to your Zoom account.   **Note** These rate limits apply when you
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UsersBody() # UsersBody | User (optional)
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
+body = zoom.UsersBody() # UsersBody | User (optional)
 
 try:
     # Create users
@@ -806,21 +806,21 @@ Delete a user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 encrypted_email = false # bool | Whether the email address passed for the `userId` value is an encrypted email address.    * `true` - The email address is encrypted.   * `false` - The email address is not encrypted.    If you do not query this parameter, this value defaults to null (`false`). (optional) (default to false)
 action = 'disassociate' # str | Delete action options.   `disassociate` - Disassociate a user.    `delete`-  Permanently delete a user.    Note: To delete pending user in the account, use `disassociate` (optional) (default to disassociate)
@@ -876,21 +876,21 @@ Verify if a user's email is registered with Zoom.          &lt;b&gt;Note: &lt;/b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 email = 'email_example' # str | The email address to be verified.
 
 try:
@@ -933,23 +933,23 @@ Change a user's [email address](https://support.zoom.us/hc/en-us/articles/201362
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The users's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UserIdEmailBody() # UserIdEmailBody | User email. (optional)
+body = zoom.UserIdEmailBody() # UserIdEmailBody | User email. (optional)
 
 try:
     # Update a user's email
@@ -991,23 +991,23 @@ Update the [password](https://support.zoom.us/hc/en-us/articles/206344385-Change
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UserIdPasswordBody() # UserIdPasswordBody | User password. (optional)
+body = zoom.UserIdPasswordBody() # UserIdPasswordBody | User password. (optional)
 
 try:
     # Update a user's password
@@ -1049,21 +1049,21 @@ Get permissions that have been granted to the user. For user-level apps, pass [t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -1106,21 +1106,21 @@ Upload a user's profile picture. For user-level apps, pass [the `me` value](http
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 pic_file = 'pic_file_example' # str |  (optional)
 
@@ -1165,21 +1165,21 @@ Delete a user's profile picture. For user-level apps, pass [the `me` value](http
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -1221,21 +1221,21 @@ Delete a scheduler. For user-level apps, pass [the `me` value](https://developer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 scheduler_id = 'scheduler_id_example' # str | Scheduler's ID.
 
@@ -1279,21 +1279,21 @@ List all of a user's schedulers. For user-level apps, pass [the `me` value](http
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -1336,21 +1336,21 @@ Delete all of a user's schedulers. For user-level apps, pass [the `me` value](ht
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -1392,21 +1392,21 @@ Retrieve a user's settings. For user-level apps, pass [the `me` value](https://d
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user ID or email address of the user. For user-level apps, pass the `me` value.
 login_type = 56 # int | The user's login method.  * `0` - Facebook OAuth  * `1` - Google OAuth  * `24` - Apple OAuth  * `27` - Microsoft OAuth  * `97` - Mobile device  * `98` - RingCentral OAuth  * `99` - API user  * `100` - Zoom Work email  * `101` - Single Sign-On (SSO)   These login methods are only available in China:  * `11` - Phone number  * `21` - WeChat  * `23` - Alipay (optional)
 option = 'option_example' # str | Optional query parameters:  * `meeting_authentication` - Use this query parameter to view the [meeting authentication settings](https://support.zoom.us/hc/en-us/articles/360037117472-Authentication-Profiles-for-Meetings-and-Webinars) applied to the user's account.  * `recording_authentication` - Use this query parameter to view the [recording authentication settings](https://support.zoom.us/hc/en-us/articles/360037756671-Authentication-Profiles-for-Cloud-Recordings) applied to the user's account.  * `meeting_security` - Use this query parameter to view the meeting security settings applied to the user's account. (optional)
@@ -1455,23 +1455,23 @@ Update a user's settings. For user-level apps, pass [the `me` value](https://dev
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UserIdSettingsBody() # UserIdSettingsBody | User Settings (optional)
+body = zoom.UserIdSettingsBody() # UserIdSettingsBody | User Settings (optional)
 option = 'option_example' # str | Optional query parameters:  * `meeting_authentication` &mdash; Use this query parameter to view the [meeting authentication settings](https://support.zoom.us/hc/en-us/articles/360037117472-Authentication-Profiles-for-Meetings-and-Webinars) applied to the user's account.  * `recording_authentication` &mdash; Use this query parameter to view the [recording authentication settings](https://support.zoom.us/hc/en-us/articles/360037756671-Authentication-Profiles-for-Cloud-Recordings) applied to the user's account.  * `meeting_security` &mdash; Use this query parameter to view the meeting security settings applied to the user's account. (optional)
 
 try:
@@ -1515,21 +1515,21 @@ Revoke a user's SSO token. For user-level apps, pass [the `me` value](https://de
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:
@@ -1571,23 +1571,23 @@ Update user status
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UserIdStatusBody() # UserIdStatusBody | User status. (optional)
+body = zoom.UserIdStatusBody() # UserIdStatusBody | User status. (optional)
 
 try:
     # Update user status
@@ -1630,21 +1630,21 @@ Use this API to get a summary of users, including the number and types of users 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 
 try:
     # Get user summary
@@ -1683,21 +1683,21 @@ Get a user's Zoom token or Zoom Access Key (ZAK). For user-level apps, pass [the
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 type = 'token' # str | The user token type.  * `zak` - A Zoom Access Key (ZAK) is used to generate a URL to start meetings. See [Getting a Zoom Access Key (ZAK)](https://developers.zoom.us/docs/meeting-sdk/auth/#start-meetings-and-webinars-with-a-zoom-users-zak-token) for details. The ZAK's expiration time is two hours. For API users, the expiration time is 90 days. An API user is a user created via the `custCreate` action in the **[Create users](https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/userCreate)** API. The maximum length of this value is `512`.  * `token` - **Deprecated** A Zoom token. This token expires in 14 days. You must make the request again after expiration to receive a new token. This query parameter returns a null value if the user signed in to Zoom via Google or Facebook. The maximum length of this value is `512`.    This value defaults to `token`. (optional) (default to token)
 ttl = 7200 # int | The ZAK expiration time to live (TTL), in seconds. To update the user's ZAK TTL, use this field with the `zak` value for the `type` query parameter.   Defaults to `7200` or `7776000` (90 days) for API users. The maximum value is one year. (optional) (default to 7200)
@@ -1744,23 +1744,23 @@ Update a user's [Zoom profile](https://support.zoom.us/hc/en-us/articles/2013632
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
-body = swagger_client.UpdateAUser() # UpdateAUser | The user's profile information. (optional)
+body = zoom.UpdateAUser() # UpdateAUser | The user's profile information. (optional)
 login_type = 56 # int | The user's login method.  * `0` - Facebook OAuth.  * `1` - Google OAuth.  * `24` - Apple OAuth.  * `27` - Microsoft OAuth.  * `97` - Mobile device.  * `98` - RingCentral OAuth.  * `99` - API user.  * `100` - Zoom Work email.  * `101` - Single Sign-On (SSO).   These login methods are only available in China.  * `11` - Phone number.  * `21` - WeChat.  * `23` - Alipay. (optional)
 remove_tsp_credentials = true # bool | Whether to remove the user's TSP credentials.  * `true` - The queried ID is an employee's unique ID.  * `false` - The queried ID is not an employee's unique ID.    This value defaults to `false` (null). (optional)
 
@@ -1806,21 +1806,21 @@ A personal meeting room is a virtual meeting room that can be permanently assign
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 vanity_name = 'vanity_name_example' # str | Personal meeting room name.
 
 try:
@@ -1863,21 +1863,21 @@ Get the Zoom Access Key (ZAK) for the authenticated user associated with the acc
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 
 try:
     # Get the user's ZAK
@@ -1916,21 +1916,21 @@ Retrieve a list your account's users.     **Scopes:** `user:read:admin`  **[Rate
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.UsersApi(zoom.ApiClient(configuration))
 status = 'active' # str | The user's status.  * `active` - The user exists on the account.  * `inactive` - The user has been deactivated.  * `pending` - The user exists on the account, but has not activated their account. See [Managing users](https://support.zoom.us/hc/en-us/articles/201363183) for details.  This value defaults to `active`. (optional) (default to active)
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 role_id = 'role_id_example' # str | The role's unique ID. Use this parameter to filter the response by a specific role. You can use the [**List roles**](/api-reference/zoom-api/methods#operation/roles) API to get a role's unique ID value. (optional)

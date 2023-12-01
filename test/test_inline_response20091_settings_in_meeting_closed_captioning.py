@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20091_settings_in_meeting_closed_captioning import InlineResponse20091SettingsInMeetingClosedCaptioning  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20091_settings_in_meeting_closed_captioning import InlineResponse20091SettingsInMeetingClosedCaptioning  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20091SettingsInMeetingClosedCaptioning(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20091SettingsInMeetingClosedCaptioning(unittest.TestCase
     def testInlineResponse20091SettingsInMeetingClosedCaptioning(self):
         """Test InlineResponse20091SettingsInMeetingClosedCaptioning"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20091_settings_in_meeting_closed_captioning.InlineResponse20091SettingsInMeetingClosedCaptioning()  # noqa: E501
+        # model = zoom.models.inline_response20091_settings_in_meeting_closed_captioning.InlineResponse20091SettingsInMeetingClosedCaptioning()  # noqa: E501
         pass
 
 

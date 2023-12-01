@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response2007_statistic_by_file_extension import InlineResponse2007StatisticByFileExtension  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response2007_statistic_by_file_extension import InlineResponse2007StatisticByFileExtension  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse2007StatisticByFileExtension(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse2007StatisticByFileExtension(unittest.TestCase):
     def testInlineResponse2007StatisticByFileExtension(self):
         """Test InlineResponse2007StatisticByFileExtension"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response2007_statistic_by_file_extension.InlineResponse2007StatisticByFileExtension()  # noqa: E501
+        # model = zoom.models.inline_response2007_statistic_by_file_extension.InlineResponse2007StatisticByFileExtension()  # noqa: E501
         pass
 
 

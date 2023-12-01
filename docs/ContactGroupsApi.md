@@ -1,4 +1,4 @@
-# swagger_client.ContactGroupsApi
+# zoom.ContactGroupsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -24,21 +24,21 @@ Get a [contact group](https://support.zoom.us/hc/en-us/articles/204519819-Group-
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The contact group ID.     Retrieve by calling the [**List contact groups**](/docs/api-reference/zoom-api/methods#operation/contactGroups) API.
 
 try:
@@ -81,22 +81,22 @@ Use this API to create a [contact group](https://support.zoom.us/hc/en-us/articl
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ContactsGroupsBody() # ContactsGroupsBody |  (optional)
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
+body = zoom.ContactsGroupsBody() # ContactsGroupsBody |  (optional)
 
 try:
     # Create a contact group
@@ -138,21 +138,21 @@ Use this API to delete a [contact group](https://support.zoom.us/hc/en-us/articl
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The contact group ID.     Retrieve by calling the [**List contact groups**](/docs/api-reference/zoom-api/methods#operation/contactGroups) API.
 
 try:
@@ -194,22 +194,22 @@ Use this API to add members to a [contact group](https://support.zoom.us/hc/en-u
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.GroupIdMembersBody() # GroupIdMembersBody |  (optional)
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
+body = zoom.GroupIdMembersBody() # GroupIdMembersBody |  (optional)
 
 try:
     # Add contact group members
@@ -251,21 +251,21 @@ Use this API to remove members in a [contact group](https://support.zoom.us/hc/e
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
 member_ids = 'member_ids_example' # str | The member's ID in a contact group. Use commas (,) to separate a maximum of 20 ids.      Can be retrieved by calling the [**List contact groups**](/docs/api-reference/zoom-api/methods#operation/contactGroupMembers) API.
 
 try:
@@ -307,21 +307,21 @@ List members in [contact groups](https://support.zoom.us/hc/en-us/articles/20451
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
 page_size = 10 # int | The number of records returned with a single API call.  (optional) (default to 10)
 next_page_token = 'next_page_token_example' # str | The next page token is used to paginate through large result sets. A next page token will be returned whenever the set of available results exceeds the current page size. The expiration period for this token is 15 minutes. (optional)
 
@@ -366,23 +366,23 @@ Update a [contact group](https://support.zoom.us/hc/en-us/articles/204519819-Gro
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The contact group ID.     Retrieve by calling the [**List contact groups**](/docs/api-reference/zoom-api/methods#operation/contactGroups) API.
-body = swagger_client.GroupsGroupIdBody() # GroupsGroupIdBody |  (optional)
+body = zoom.GroupsGroupIdBody() # GroupsGroupIdBody |  (optional)
 
 try:
     # Update a contact group
@@ -424,21 +424,21 @@ List [contact groups](https://support.zoom.us/hc/en-us/articles/204519819-Group-
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContactGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.ContactGroupsApi(zoom.ApiClient(configuration))
 page_size = 10 # int | The number of records returned with a single API call.  (optional) (default to 10)
 next_page_token = 'next_page_token_example' # str | The next page token is used to paginate through large result sets. A next page token will be returned whenever the set of available results exceeds the current page size. The expiration period for this token is 15 minutes. (optional)
 

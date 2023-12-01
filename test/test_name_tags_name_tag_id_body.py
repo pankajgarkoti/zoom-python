@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.name_tags_name_tag_id_body import NameTagsNameTagIdBody  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.name_tags_name_tag_id_body import NameTagsNameTagIdBody  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestNameTagsNameTagIdBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestNameTagsNameTagIdBody(unittest.TestCase):
     def testNameTagsNameTagIdBody(self):
         """Test NameTagsNameTagIdBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.name_tags_name_tag_id_body.NameTagsNameTagIdBody()  # noqa: E501
+        # model = zoom.models.name_tags_name_tag_id_body.NameTagsNameTagIdBody()  # noqa: E501
         pass
 
 

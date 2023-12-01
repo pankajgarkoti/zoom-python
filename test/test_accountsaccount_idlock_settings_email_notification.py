@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idlock_settings_email_notification import AccountsaccountIdlockSettingsEmailNotification  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idlock_settings_email_notification import AccountsaccountIdlockSettingsEmailNotification  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdlockSettingsEmailNotification(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdlockSettingsEmailNotification(unittest.TestCase):
     def testAccountsaccountIdlockSettingsEmailNotification(self):
         """Test AccountsaccountIdlockSettingsEmailNotification"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idlock_settings_email_notification.AccountsaccountIdlockSettingsEmailNotification()  # noqa: E501
+        # model = zoom.models.accountsaccount_idlock_settings_email_notification.AccountsaccountIdlockSettingsEmailNotification()  # noqa: E501
         pass
 
 

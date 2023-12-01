@@ -1,4 +1,4 @@
-# swagger_client.GroupsApi
+# zoom.GroupsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -36,21 +36,21 @@ Use this API to delete a group's [Virtual Background files](https://support.zoom
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID. To get a group's ID, use the [**List groups**](/api-reference/zoom-api/methods#operation/groups) API.
 file_ids = 'file_ids_example' # str | A comma-separated list of the file IDs to delete. (optional)
 
@@ -94,21 +94,21 @@ Retrieve a [group's](https://support.zoom.us/hc/en-us/articles/204519819-Group-M
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | Id of the group.
 option = 'option_example' # str | Optional query parameters:  * `meeting_security` &mdash; Use this query parameter to view the meeting security settings applied to the user's account. (optional)
 
@@ -153,21 +153,21 @@ Get settings for a [group](https://support.zoom.us/hc/en-us/articles/204519819-G
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | 
 option = 'option_example' # str | Optional query parameters.  * `meeting_authentication` - View the [meeting authentication settings](https://support.zoom.us/hc/en-us/articles/360037117472-Authentication-Profiles-for-Meetings-and-Webinars) applied to the user's account.  * `recording_authentication` - View the [recording authentication settings](https://support.zoom.us/hc/en-us/articles/360037756671-Authentication-Profiles-for-Cloud-Recordings) applied to the user's account.  * `meeting_security` - View the meeting security settings applied to the user's account. (optional)
 custom_query_fields = 'custom_query_fields_example' # str | Provide the name of the field by which you would like to filter the response. For example, if you provide `host_video` as the value of this field, you will get a response similar to the following:   {  `schedule_meeting`: {  `host_video`: false  } }   You can provide multiple values by separating them with commas(example: `host_video,participant_video`). (optional)
@@ -214,21 +214,21 @@ Get a [group](https://support.zoom.us/hc/en-us/articles/204519819-Group-Manageme
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 
 try:
@@ -271,21 +271,21 @@ Use this API to return a list of [group](https://support.zoom.us/hc/en-us/articl
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 next_page_token = 'next_page_token_example' # str | Use the next page token to paginate through large result sets. A next page token is returned whenever the set of available results exceeds the current page size. This token's expiration period is 15 minutes. (optional)
@@ -332,23 +332,23 @@ Use this API to add administrators to a [group](https://support.zoom.us/hc/en-us
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
-body = swagger_client.GroupIdAdminsBody() # GroupIdAdminsBody |  (optional)
+body = zoom.GroupIdAdminsBody() # GroupIdAdminsBody |  (optional)
 
 try:
     # Add group admins
@@ -390,23 +390,23 @@ Use this API to remove a [group](https://support.zoom.us/hc/en-us/articles/20451
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
-user_id = swagger_client.UserId() # UserId | The user ID or email address of the user. For user-level apps, pass the `me` value.
+user_id = zoom.UserId() # UserId | The user ID or email address of the user. For user-level apps, pass the `me` value.
 
 try:
     # Delete a group admin
@@ -448,22 +448,22 @@ Use this API to create a [group](https://support.zoom.us/hc/en-us/articles/20451
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.GroupsBody() # GroupsBody |  (optional)
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
+body = zoom.GroupsBody() # GroupsBody |  (optional)
 
 try:
     # Create a group
@@ -504,21 +504,21 @@ Delete an entire [group](https://support.zoom.us/hc/en-us/articles/204519819-Gro
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 
 try:
@@ -560,23 +560,23 @@ Update a [group's](https://support.zoom.us/hc/en-us/articles/204519819-Group-Man
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group's ID.
-body = swagger_client.GroupIdLockSettingsBody() # GroupIdLockSettingsBody |  (optional)
+body = zoom.GroupIdLockSettingsBody() # GroupIdLockSettingsBody |  (optional)
 option = 'option_example' # str | Optional query parameters. * `meeting_security` - View the meeting security settings applied to the user's account. (optional)
 
 try:
@@ -620,21 +620,21 @@ List the members of a [group](https://support.zoom.us/hc/en-us/articles/20451981
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 page_number = 1 # int | **Deprecated.** We will no longer support this field in a future release. Instead, use the `next_page_token` for pagination. (optional) (default to 1)
@@ -683,23 +683,23 @@ Use this API to add users to a [group](https://support.zoom.us/hc/en-us/articles
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
-body = swagger_client.GroupIdMembersBody1() # GroupIdMembersBody1 |  (optional)
+body = zoom.GroupIdMembersBody1() # GroupIdMembersBody1 |  (optional)
 
 try:
     # Add group members
@@ -741,21 +741,21 @@ Use this API to remove a user from a [group](https://support.zoom.us/hc/en-us/ar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 member_id = 'member_id_example' # str | The member ID or email address.
 
@@ -799,21 +799,21 @@ Get webinar registration settings for a [group](https://support.zoom.us/hc/en-us
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | 
 type = 'type_example' # str | The registration type:  * `webinar` &mdash; webinar. (optional)
 
@@ -858,23 +858,23 @@ Update webinar registration settings for a [group](https://support.zoom.us/hc/en
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | 
-body = swagger_client.SettingsRegistrationBody1() # SettingsRegistrationBody1 |  (optional)
+body = zoom.SettingsRegistrationBody1() # SettingsRegistrationBody1 |  (optional)
 type = 'type_example' # str | The registration type:  * `webinar` &mdash; webinar. (optional)
 
 try:
@@ -918,23 +918,23 @@ Update a [group](https://support.zoom.us/hc/en-us/articles/204519819-Group-Manag
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
-body = swagger_client.GroupsGroupIdBody1() # GroupsGroupIdBody1 |  (optional)
+body = zoom.GroupsGroupIdBody1() # GroupsGroupIdBody1 |  (optional)
 
 try:
     # Update a group
@@ -976,21 +976,21 @@ List [groups](https://support.zoom.us/hc/en-us/articles/204519819-Group-Manageme
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 
 try:
     # List groups
@@ -1029,24 +1029,24 @@ Use this API to perform either of the following tasks:  * Remove a group member 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group's unique ID. To get this value, use the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API. * To set a user's primary group, use the `target_group_id` value for this parameter's value.  * To move a group member from one group to another, use the `groupId` of the designated group.
 member_id = 'member_id_example' # str | The group member's unique ID. To get this value, use the [**List group members**](/docs/api-reference/zoom-api/methods#operation/groupMembers) API.
-body = swagger_client.MembersMemberIdBody() # MembersMemberIdBody |  (optional)
+body = zoom.MembersMemberIdBody() # MembersMemberIdBody |  (optional)
 
 try:
     # Update a group member
@@ -1089,23 +1089,23 @@ Update settings for a [group](https://support.zoom.us/hc/en-us/articles/20451981
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group's ID.
-body = swagger_client.GroupIdSettingsBody() # GroupIdSettingsBody |  (optional)
+body = zoom.GroupIdSettingsBody() # GroupIdSettingsBody |  (optional)
 option = 'option_example' # str | Optional query parameters.  * `meeting_authentication` - [Meeting authentication settings](https://support.zoom.us/hc/en-us/articles/360037117472-Authentication-Profiles-for-Meetings-and-Webinars).  * `recording_authentication` - [Recording authentication settings](https://support.zoom.us/hc/en-us/articles/360037756671-Authentication-Profiles-for-Cloud-Recordings).  * `meeting_security` - Meeting security settings. (optional)
 
 try:
@@ -1150,21 +1150,21 @@ Use this API to [upload Virtual Background files](https://support.zoom.us/hc/en-
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.GroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID. To get a group's ID, use the [**List groups**](/api-reference/zoom-api/methods#operation/groups) API.
 file = 'file_example' # str |  (optional)
 

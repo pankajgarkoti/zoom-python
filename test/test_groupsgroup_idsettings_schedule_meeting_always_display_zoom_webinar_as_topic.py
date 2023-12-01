@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.groupsgroup_idsettings_schedule_meeting_always_display_zoom_webinar_as_topic import GroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.groupsgroup_idsettings_schedule_meeting_always_display_zoom_webinar_as_topic import GroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestGroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic(un
     def testGroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic(self):
         """Test GroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.groupsgroup_idsettings_schedule_meeting_always_display_zoom_webinar_as_topic.GroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic()  # noqa: E501
+        # model = zoom.models.groupsgroup_idsettings_schedule_meeting_always_display_zoom_webinar_as_topic.GroupsgroupIdsettingsScheduleMeetingAlwaysDisplayZoomWebinarAsTopic()  # noqa: E501
         pass
 
 

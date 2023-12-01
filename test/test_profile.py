@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.profile import Profile  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.profile import Profile  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestProfile(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestProfile(unittest.TestCase):
     def testProfile(self):
         """Test Profile"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.profile.Profile()  # noqa: E501
+        # model = zoom.models.profile.Profile()  # noqa: E501
         pass
 
 

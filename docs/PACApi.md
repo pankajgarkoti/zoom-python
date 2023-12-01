@@ -1,4 +1,4 @@
-# swagger_client.PACApi
+# zoom.PACApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -17,21 +17,21 @@ Retrieve a list of a user's [personal audio conference (PAC)](https://support.zo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PACApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.PACApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 
 try:

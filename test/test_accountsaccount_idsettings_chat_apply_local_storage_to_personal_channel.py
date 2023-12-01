@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idsettings_chat_apply_local_storage_to_personal_channel import AccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idsettings_chat_apply_local_storage_to_personal_channel import AccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel(unitte
     def testAccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel(self):
         """Test AccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idsettings_chat_apply_local_storage_to_personal_channel.AccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel()  # noqa: E501
+        # model = zoom.models.accountsaccount_idsettings_chat_apply_local_storage_to_personal_channel.AccountsaccountIdsettingsChatApplyLocalStorageToPersonalChannel()  # noqa: E501
         pass
 
 

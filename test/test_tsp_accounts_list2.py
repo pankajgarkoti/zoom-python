@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tsp_accounts_list2 import TSPAccountsList2  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.tsp_accounts_list2 import TSPAccountsList2  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestTSPAccountsList2(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTSPAccountsList2(unittest.TestCase):
     def testTSPAccountsList2(self):
         """Test TSPAccountsList2"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tsp_accounts_list2.TSPAccountsList2()  # noqa: E501
+        # model = zoom.models.tsp_accounts_list2.TSPAccountsList2()  # noqa: E501
         pass
 
 

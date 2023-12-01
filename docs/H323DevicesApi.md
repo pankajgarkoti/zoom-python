@@ -1,4 +1,4 @@
-# swagger_client.H323DevicesApi
+# zoom.H323DevicesApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -20,22 +20,22 @@ A H.323 or SIP device can make a video call to a [Room Connector](https://suppor
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.H323DevicesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TheH323SIPDeviceObject_() # TheH323SIPDeviceObject_ | H.323/SIP device. (optional)
+api_instance = zoom.H323DevicesApi(zoom.ApiClient(configuration))
+body = zoom.TheH323SIPDeviceObject_() # TheH323SIPDeviceObject_ | H.323/SIP device. (optional)
 
 try:
     # Create a H.323/SIP device
@@ -77,21 +77,21 @@ A H.323 or SIP device can make a video call to a [Room Connector](https://suppor
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.H323DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.H323DevicesApi(zoom.ApiClient(configuration))
 device_id = 'device_id_example' # str | The device ID.
 
 try:
@@ -133,21 +133,21 @@ A H.323 or SIP device can make a video call to a [Room Connector](https://suppor
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.H323DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.H323DevicesApi(zoom.ApiClient(configuration))
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 page_number = 1 # int | **Deprecated.** We will no longer support this field in a future release. Instead, use the `next_page_token` for pagination. (optional) (default to 1)
 next_page_token = 'next_page_token_example' # str | Use the next page token to paginate through large result sets. A next page token is returned whenever the set of available results exceeds the current page size. This token's expiration period is 15 minutes. (optional)
@@ -194,23 +194,23 @@ A H.323 or SIP device can make a video call to a [Room Connector](https://suppor
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.H323DevicesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.H323DevicesApi(zoom.ApiClient(configuration))
 device_id = 'device_id_example' # str | The device ID.
-body = swagger_client.TheH323SIPDeviceObject2() # TheH323SIPDeviceObject2 |  (optional)
+body = zoom.TheH323SIPDeviceObject2() # TheH323SIPDeviceObject2 |  (optional)
 
 try:
     # Update a H.323/SIP device

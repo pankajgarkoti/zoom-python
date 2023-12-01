@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20045_settings_authentication_exception import InlineResponse20045SettingsAuthenticationException  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20045_settings_authentication_exception import InlineResponse20045SettingsAuthenticationException  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20045SettingsAuthenticationException(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20045SettingsAuthenticationException(unittest.TestCase):
     def testInlineResponse20045SettingsAuthenticationException(self):
         """Test InlineResponse20045SettingsAuthenticationException"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20045_settings_authentication_exception.InlineResponse20045SettingsAuthenticationException()  # noqa: E501
+        # model = zoom.models.inline_response20045_settings_authentication_exception.InlineResponse20045SettingsAuthenticationException()  # noqa: E501
         pass
 
 

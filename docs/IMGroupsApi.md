@@ -1,4 +1,4 @@
-# swagger_client.IMGroupsApi
+# zoom.IMGroupsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -24,21 +24,21 @@ Retrieve an [IM directory group](https://support.zoom.us/hc/en-us/articles/20374
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 
 try:
@@ -81,22 +81,22 @@ Create an IM directory group under your account.           **Scopes:** `imgroup:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ImGroupsBody() # ImGroupsBody |  (optional)
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
+body = zoom.ImGroupsBody() # ImGroupsBody |  (optional)
 
 try:
     # Create an IM directory group
@@ -137,21 +137,21 @@ Delete an [IM directory group](https://support.zoom.us/hc/en-us/articles/2037498
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 
 try:
@@ -193,21 +193,21 @@ List the members of an [IM directory group](https://support.zoom.us/hc/en-us/art
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 page_number = 1 # int | **Deprecated.** We will no longer support this field in a future release. Instead, use the `next_page_token` for pagination. (optional) (default to 1)
@@ -256,23 +256,23 @@ Add members to an [IM directory group](https://support.zoom.us/hc/en-us/articles
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
-body = swagger_client.GroupIdMembersBody2() # GroupIdMembersBody2 |  (optional)
+body = zoom.GroupIdMembersBody2() # GroupIdMembersBody2 |  (optional)
 
 try:
     # Add IM directory group members
@@ -314,21 +314,21 @@ Delete a member from an [IM directory group](https://support.zoom.us/hc/en-us/ar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
 member_id = 'member_id_example' # str | The member ID.
 
@@ -372,23 +372,23 @@ Update an [IM directory group](https://support.zoom.us/hc/en-us/articles/2037498
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 group_id = 'group_id_example' # str | The group ID.     Retrieve by calling the [**List groups**](/docs/api-reference/zoom-api/methods#operation/groups) API.
-body = swagger_client.GroupsGroupIdBody2() # GroupsGroupIdBody2 |  (optional)
+body = zoom.GroupsGroupIdBody2() # GroupsGroupIdBody2 |  (optional)
 
 try:
     # Update an IM directory group
@@ -430,21 +430,21 @@ List [IM directory groups](https://support.zoom.us/hc/en-us/articles/203749815-I
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.IMGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.IMGroupsApi(zoom.ApiClient(configuration))
 
 try:
     # List IM directory groups

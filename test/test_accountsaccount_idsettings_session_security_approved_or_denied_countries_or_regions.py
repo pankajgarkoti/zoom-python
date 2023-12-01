@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idsettings_session_security_approved_or_denied_countries_or_regions import AccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idsettings_session_security_approved_or_denied_countries_or_regions import AccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrReg
     def testAccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions(self):
         """Test AccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idsettings_session_security_approved_or_denied_countries_or_regions.AccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions()  # noqa: E501
+        # model = zoom.models.accountsaccount_idsettings_session_security_approved_or_denied_countries_or_regions.AccountsaccountIdsettingsSessionSecurityApprovedOrDeniedCountriesOrRegions()  # noqa: E501
         pass
 
 

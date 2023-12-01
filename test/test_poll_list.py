@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.poll_list import PollList  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.poll_list import PollList  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestPollList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPollList(unittest.TestCase):
     def testPollList(self):
         """Test PollList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.poll_list.PollList()  # noqa: E501
+        # model = zoom.models.poll_list.PollList()  # noqa: E501
         pass
 
 

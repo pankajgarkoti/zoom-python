@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idsettings_telephony_telephony_regions import AccountsaccountIdsettingsTelephonyTelephonyRegions  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idsettings_telephony_telephony_regions import AccountsaccountIdsettingsTelephonyTelephonyRegions  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdsettingsTelephonyTelephonyRegions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdsettingsTelephonyTelephonyRegions(unittest.TestCase):
     def testAccountsaccountIdsettingsTelephonyTelephonyRegions(self):
         """Test AccountsaccountIdsettingsTelephonyTelephonyRegions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idsettings_telephony_telephony_regions.AccountsaccountIdsettingsTelephonyTelephonyRegions()  # noqa: E501
+        # model = zoom.models.accountsaccount_idsettings_telephony_telephony_regions.AccountsaccountIdsettingsTelephonyTelephonyRegions()  # noqa: E501
         pass
 
 

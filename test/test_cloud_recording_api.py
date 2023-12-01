@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.cloud_recording_api import CloudRecordingApi  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.api.cloud_recording_api import CloudRecordingApi  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestCloudRecordingApi(unittest.TestCase):

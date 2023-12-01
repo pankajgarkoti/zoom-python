@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.sip_phones_phone_id_body import SipPhonesPhoneIdBody  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.sip_phones_phone_id_body import SipPhonesPhoneIdBody  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestSipPhonesPhoneIdBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSipPhonesPhoneIdBody(unittest.TestCase):
     def testSipPhonesPhoneIdBody(self):
         """Test SipPhonesPhoneIdBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.sip_phones_phone_id_body.SipPhonesPhoneIdBody()  # noqa: E501
+        # model = zoom.models.sip_phones_phone_id_body.SipPhonesPhoneIdBody()  # noqa: E501
         pass
 
 

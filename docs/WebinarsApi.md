@@ -1,4 +1,4 @@
-# swagger_client.WebinarsApi
+# zoom.WebinarsApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -68,23 +68,23 @@ Register up to 30 registrants at once for a scheduled webinar that requires [reg
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's unique identifier.
-body = swagger_client.WebinarIdBatchRegistrantsBody() # WebinarIdBatchRegistrantsBody |  (optional)
+body = zoom.WebinarIdBatchRegistrantsBody() # WebinarIdBatchRegistrantsBody |  (optional)
 
 try:
     # Perform batch registration
@@ -127,23 +127,23 @@ Use this API to create a webinar's [Session Branding](https://support.zoom.us/hc
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.BrandingNameTagsBody() # BrandingNameTagsBody |  (optional)
+body = zoom.BrandingNameTagsBody() # BrandingNameTagsBody |  (optional)
 
 try:
     # Create a webinar's branding name tag
@@ -186,21 +186,21 @@ Use this API to delete a webinar's [Session Branding](https://support.zoom.us/hc
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 name_tag_ids = 'name_tag_ids_example' # str | A comma-separated list of the name tag IDs to delete. (optional)
 
@@ -244,21 +244,21 @@ Use this API to delete a webinar's session branding [Virtual Background](https:/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 ids = 'ids_example' # str | A comma-separated list of the Virtual Background file IDs to delete. (optional)
 
@@ -302,21 +302,21 @@ Use this API to delete a webinar's session branding wallpaper file.    **Prerequ
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -358,21 +358,21 @@ Deletes a message in a live webinar based on ID.   **Prerequisites:**  * Have Zo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 message_id = 'message_id_example' # str | The live webinar chat message's unique identifier (UUID), in base64-encoded format.
 file_ids = 'file_ids_example' # str | The live webinar chat file's universally unique identifier (UUID), in base64-encoded format. Separate multiple values with commas. (optional)
@@ -418,21 +418,21 @@ Delete a webinar registrant.           **Scopes:** `webinar:write`,`webinar:writ
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 56 # int | The webinar ID.
 registrant_id = 'registrant_id_example' # str | The registrant ID.
 occurrence_id = 'occurrence_id_example' # str | The webinar occurrence ID. (optional)
@@ -478,21 +478,21 @@ Get webinar tracking sources
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -535,21 +535,21 @@ Use this API to get the webinar's [Session Branding](https://support.zoom.us/hc/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -592,21 +592,21 @@ Get a webinar's live stream configuration details, such as Stream URL, Stream Ke
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's unique ID.
 
 try:
@@ -649,21 +649,21 @@ The polling feature for webinar lets you create single-choice or multiple-choice
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API returns a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://developers.zoom.us/docs/api/rest/using-zoom-apis/#meeting-id-and-uuid) the webinar UUID before making an API request.
 
 try:
@@ -706,21 +706,21 @@ List the Q&amp;A of a specific past webinar.   The [question &amp; answer (Q&amp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API returns a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://developers.zoom.us/docs/api/rest/using-zoom-apis/#meeting-id-and-uuid) the webinar UUID before making an API request.
 
 try:
@@ -763,21 +763,21 @@ Retrieve a list of all the participants who attended a webinar hosted in the pas
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API returns a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://developers.zoom.us/docs/api/rest/using-zoom-apis/#meeting-id-and-uuid) the webinar UUID before making an API request.
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
 next_page_token = 'next_page_token_example' # str | Use the next page token to paginate through large result sets. A next page token is returned whenever the set of available results exceeds the current page size. This token's expiration period is 15 minutes. (optional)
@@ -824,21 +824,21 @@ Display a list of a user's [webinar templates](https://support.zoom.us/hc/en-us/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's ID. To get a user's ID, use the [**List users**](/docs/api-reference/zoom-api/ma#operation/users) API. For user-level apps, pass the `me` value instead of the user ID value.
 
 try:
@@ -881,21 +881,21 @@ List past webinar instances.           **Scopes:** `webinar:read:admin`,`webinar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -938,21 +938,21 @@ Use this API to set a webinar's default session branding [Virtual Background](ht
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 id = 'id_example' # str | The Virtual Background file ID to update. (optional)
 set_default_for_all_panelists = true # bool | Whether to set the Virtual Background file as the new default for all panelists. This includes panelists not currently assigned a default Virtual Background. (optional)
@@ -998,24 +998,24 @@ Use this API to update a webinar's [Session Branding](https://support.zoom.us/hc
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 name_tag_id = 'name_tag_id_example' # str | The name tag's ID.
-body = swagger_client.NameTagsNameTagIdBody() # NameTagsNameTagIdBody |  (optional)
+body = zoom.NameTagsNameTagIdBody() # NameTagsNameTagIdBody |  (optional)
 
 try:
     # Update a webinar's branding name tag
@@ -1058,21 +1058,21 @@ Use this API to upload a webinar's session branding [Virtual Background](https:/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 file = 'file_example' # str |  (optional)
 default = true # bool |  (optional)
@@ -1121,21 +1121,21 @@ Use this API to upload a webinar's session branding wallpaper file. Webinar bran
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 file = 'file_example' # str |  (optional)
 
@@ -1180,21 +1180,21 @@ Zoom users with a [Webinar Plan](https://zoom.us/webinar) have access to creatin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).
 occurrence_id = 'occurrence_id_example' # str | Unique identifier for an occurrence of a recurring webinar. [Recurring webinars](https://support.zoom.us/hc/en-us/articles/216354763-How-to-Schedule-A-Recurring-Webinar) can have a maximum of 50 occurrences. When you create a recurring Webinar using [**Create a webinar**](/docs/api-reference/zoom-api/methods#operation/webinarCreate) API, you can retrieve the Occurrence ID from the response of the API call. (optional)
 show_previous_occurrences = true # bool | Set the value of this field to `true` if you would like to view Webinar details of all previous occurrences of a recurring Webinar. (optional)
@@ -1241,21 +1241,21 @@ List absentees of a webinar.           **Scopes:** `webinar:read:admin`,`webinar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 'webinar_id_example' # str | The webinar's ID or universally unique ID (UUID).  * If you provide a webinar ID, the API will return a response for the latest webinar instance.  * If you provide a webinar UUID that begins with a `/` character or contains the `//` characters, you **must** [double encode](https://developers.zoom.us/docs/api/rest/using-zoom-apis/#meeting-id-and-uuid) the webinar UUID before making an API request.
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)
@@ -1304,23 +1304,23 @@ Schedule a webinar for a user (webinar host). For user-level apps, pass [the `me
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user ID or email address of the user. For user-level apps, pass the `me` value.
-body = swagger_client.UserIdWebinarsBody() # UserIdWebinarsBody |  (optional)
+body = zoom.UserIdWebinarsBody() # UserIdWebinarsBody |  (optional)
 
 try:
     # Create a webinar
@@ -1363,21 +1363,21 @@ Delete a webinar.    **Prerequisites:**     * Pro or higher plan with the webina
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 cancel_webinar_reminder = true # bool | `true` - Notify panelists and registrants about the webinar cancellation via email.   `false` - Do not send any email notification to webinar registrants and panelists.   The default value of this field is `false`. (optional)
@@ -1423,23 +1423,23 @@ Create a batch of invitation links for a webinar.  **Prerequisites:**  * Busines
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.InviteLinks() # InviteLinks | Webinar invite link object. (optional)
+body = zoom.InviteLinks() # InviteLinks | Webinar invite link object. (optional)
 
 try:
     # Create webinar's invite links
@@ -1482,23 +1482,23 @@ Let users [live stream a webinar](https://support.zoom.us/hc/en-us/articles/1150
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.LivestreamStatusBody1() # LivestreamStatusBody1 | Webinar (optional)
+body = zoom.LivestreamStatusBody1() # LivestreamStatusBody1 | Webinar (optional)
 
 try:
     # Update live stream status
@@ -1540,23 +1540,23 @@ Update a webinar's live stream information.        **Prerequisites:**     * Pro 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarIdLivestreamBody() # WebinarIdLivestreamBody | Webinar (optional)
+body = zoom.WebinarIdLivestreamBody() # WebinarIdLivestreamBody | Webinar (optional)
 
 try:
     # Update a live stream
@@ -1598,21 +1598,21 @@ Use this API to get a webinar's archive token to allow live streaming. The join 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -1655,21 +1655,21 @@ Use this API to get a webinar's archive token to allow local archiving. The arch
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -1712,21 +1712,21 @@ Use this API to get a webinar's join token to allow for local recording. The joi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -1769,23 +1769,23 @@ Panelists in a webinar can view and send video, screen share, annotate, and do m
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarIdPanelistsBody() # WebinarIdPanelistsBody |  (optional)
+body = zoom.WebinarIdPanelistsBody() # WebinarIdPanelistsBody |  (optional)
 
 try:
     # Add panelists
@@ -1828,21 +1828,21 @@ Remove a panelist
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 panelist_id = 'panelist_id_example' # str | The panelist's ID or email.
 
@@ -1886,21 +1886,21 @@ List all of a webinar's panelists.    Webinar panelists can view and send video,
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -1943,21 +1943,21 @@ Remove all the panelists from a webinar.     **Prerequisites:**     * Pro or a h
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -1999,23 +1999,23 @@ Create a [poll](https://support.zoom.us/hc/en-us/articles/203749865-Polling-for-
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.MeetingAndWebinarPollingObject_() # MeetingAndWebinarPollingObject_ | Webinar poll object. (optional)
+body = zoom.MeetingAndWebinarPollingObject_() # MeetingAndWebinarPollingObject_ | Webinar poll object. (optional)
 
 try:
     # Create a webinar's poll
@@ -2058,21 +2058,21 @@ Delete a webinar's [poll](https://support.zoom.us/hc/en-us/articles/203749865-Po
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 poll_id = 'poll_id_example' # str | The poll ID
 
@@ -2116,21 +2116,21 @@ Get a webinar's [poll](https://support.zoom.us/hc/en-us/articles/203749865-Polli
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 poll_id = 'poll_id_example' # str | The poll ID
 
@@ -2175,24 +2175,24 @@ Update a webinar's [poll](https://support.zoom.us/hc/en-us/articles/203749865-Po
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 poll_id = 'poll_id_example' # str | The poll ID
-body = swagger_client.MeetingAndWebinarPollingObject4() # MeetingAndWebinarPollingObject4 | Webinar Poll (optional)
+body = zoom.MeetingAndWebinarPollingObject4() # MeetingAndWebinarPollingObject4 | Webinar Poll (optional)
 
 try:
     # Update a webinar poll
@@ -2235,21 +2235,21 @@ List all the [polls](https://support.zoom.us/hc/en-us/articles/203749865-Polling
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 anonymous = true # bool | Whether to query for polls with the **Anonymous** option enabled:  * `true` &mdash; Query for polls with the **Anonymous** option enabled.  * `false` &mdash; Do not query for polls with the **Anonymous** option enabled. (optional)
 
@@ -2294,23 +2294,23 @@ Create and submit a user's registration for a webinar. Zoom users with a [Webina
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarIdRegistrantsBody() # WebinarIdRegistrantsBody |  (optional)
+body = zoom.WebinarIdRegistrantsBody() # WebinarIdRegistrantsBody |  (optional)
 occurrence_ids = 'occurrence_ids_example' # str | A comma-separated list of webinar occurrence IDs. Get this value with the [Get a webinar](/docs/api/rest/reference/zoom-api/methods/#operation/webinar) API. Make sure the `registration_type` is 3 if updating multiple occurrences with this API. (optional)
 
 try:
@@ -2355,21 +2355,21 @@ Zoom users with a [webinar plan](https://zoom.us/webinar) have access to creatin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 registrant_id = 'registrant_id_example' # str | The registrant ID.
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
@@ -2416,23 +2416,23 @@ Update registration questions and fields of a scheduled webinar for users to ans
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarRegistrantQuestions() # WebinarRegistrantQuestions | Webinar registrant questions (optional)
+body = zoom.WebinarRegistrantQuestions() # WebinarRegistrantQuestions | Webinar registrant questions (optional)
 
 try:
     # Update registration questions
@@ -2474,23 +2474,23 @@ Update webinar registrants' registration status. You can approve or deny a regis
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.RegistrantsStatusBody2() # RegistrantsStatusBody2 |  (optional)
+body = zoom.RegistrantsStatusBody2() # RegistrantsStatusBody2 |  (optional)
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 
 try:
@@ -2534,21 +2534,21 @@ List all users that have registered for a given webinar. Zoom users with a [webi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 occurrence_id = 'occurrence_id_example' # str | The meeting or webinar occurrence ID. (optional)
 status = 'approved' # str | Query by the registrant's status.  * `pending` - The registration is pending.  * `approved` - The registrant is approved.  * `denied` - The registration is denied. (optional) (default to approved)
@@ -2603,21 +2603,21 @@ List registration questions and fields that are to be answered by users while re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -2660,23 +2660,23 @@ Update a webinar's status. Use this API to end an ongoing webinar.         **Pre
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarIdStatusBody() # WebinarIdStatusBody |  (optional)
+body = zoom.WebinarIdStatusBody() # WebinarIdStatusBody |  (optional)
 
 try:
     # Update webinar status
@@ -2719,21 +2719,21 @@ Use this API to delete a [webinar survey](https://support.zoom.us/hc/en-us/artic
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -2775,21 +2775,21 @@ Return information about a [webinar survey](https://support.zoom.us/hc/en-us/art
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 
 try:
@@ -2832,23 +2832,23 @@ Update a [webinar survey](https://support.zoom.us/hc/en-us/articles/360048745651
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarSurveyObject1() # WebinarSurveyObject1 |  (optional)
+body = zoom.WebinarSurveyObject1() # WebinarSurveyObject1 |  (optional)
 
 try:
     # Update a webinar survey
@@ -2890,23 +2890,23 @@ Use this API to create a webinar template from an existing webinar.     **Scopes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user ID retrievable from the [List users](/api-reference/zoom-api/methods#operation/users) API.
-body = swagger_client.UserIdWebinarTemplatesBody() # UserIdWebinarTemplatesBody |  (optional)
+body = zoom.UserIdWebinarTemplatesBody() # UserIdWebinarTemplatesBody |  (optional)
 
 try:
     # Create a webinar template
@@ -2949,21 +2949,21 @@ Use this API to get a webinar's [closed caption token (caption URL)](https://sup
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
 type = 'closed_caption_token' # str | The webinar token type:  * `closed_caption_token` &mdash; The third-party closed caption API token.   This defaults to `closed_caption_token`. (optional) (default to closed_caption_token)
 
@@ -3008,23 +3008,23 @@ Make updates to a scheduled webinar.   **100 requests per day**. The rate limit 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 webinar_id = 789 # int | The webinar's ID.
-body = swagger_client.WebinarsWebinarIdBody() # WebinarsWebinarIdBody | Webinar. (optional)
+body = zoom.WebinarsWebinarIdBody() # WebinarsWebinarIdBody | Webinar. (optional)
 occurrence_id = 'occurrence_id_example' # str | Webinar occurrence ID. Support change of agenda, start time, duration, and settings `host_video`, `panelist_video`, `hd_video, watermark`, `auto_recording`. (optional)
 
 try:
@@ -3068,21 +3068,21 @@ List all the webinars scheduled by or on behalf a webinar host. For user-level a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.WebinarsApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.WebinarsApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The user's user ID or email address. For user-level apps, pass the `me` value.
 type = 'scheduled' # str | The type of webinar.  * `scheduled` - All valid previous (unexpired) webinars, live webinars, and upcoming scheduled webinars.  * `upcoming` - All upcoming webinars, including live webinars. (optional) (default to scheduled)
 page_size = 30 # int | The number of records returned within a single API call. (optional) (default to 30)

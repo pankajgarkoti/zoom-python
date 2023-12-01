@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.livestream_status_body1 import LivestreamStatusBody1  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.livestream_status_body1 import LivestreamStatusBody1  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestLivestreamStatusBody1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLivestreamStatusBody1(unittest.TestCase):
     def testLivestreamStatusBody1(self):
         """Test LivestreamStatusBody1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.livestream_status_body1.LivestreamStatusBody1()  # noqa: E501
+        # model = zoom.models.livestream_status_body1.LivestreamStatusBody1()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.groupsgroup_idsettings_chat_send_data_to_third_party_archiving_service import GroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.groupsgroup_idsettings_chat_send_data_to_third_party_archiving_service import GroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestGroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService(unittest
     def testGroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService(self):
         """Test GroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.groupsgroup_idsettings_chat_send_data_to_third_party_archiving_service.GroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService()  # noqa: E501
+        # model = zoom.models.groupsgroup_idsettings_chat_send_data_to_third_party_archiving_service.GroupsgroupIdsettingsChatSendDataToThirdPartyArchivingService()  # noqa: E501
         pass
 
 

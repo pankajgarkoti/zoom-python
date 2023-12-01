@@ -1,4 +1,4 @@
-# swagger_client.RolesApi
+# zoom.RolesApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -24,23 +24,23 @@ User [roles](https://support.zoom.us/hc/en-us/articles/115001078646-Role-Based-A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 role_id = 'role_id_example' # str | The role ID
-body = swagger_client.RoleIdMembersBody() # RoleIdMembersBody | Role members (optional)
+body = zoom.RoleIdMembersBody() # RoleIdMembersBody | Role members (optional)
 
 try:
     # Assign a role
@@ -83,22 +83,22 @@ Each Zoom user automatically has a role which can either be owner, administrator
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RolesBody() # RolesBody |  (optional)
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
+body = zoom.RolesBody() # RolesBody |  (optional)
 
 try:
     # Create a role
@@ -140,21 +140,21 @@ Each Zoom user automatically has a role which can either be owner, administrator
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 role_id = 'role_id_example' # str | 
 
 try:
@@ -196,21 +196,21 @@ Each Zoom user automatically has a role which can either be owner, administrator
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 role_id = 'role_id_example' # str | The role ID. 
 
 try:
@@ -253,21 +253,21 @@ User [roles](https://support.zoom.us/hc/en-us/articles/115001078646-Role-Based-A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 role_id = 'role_id_example' # str | The role ID
 member_id = 'member_id_example' # str | Member's ID
 
@@ -311,21 +311,21 @@ User [roles](https://support.zoom.us/hc/en-us/articles/115001078646-Role-Based-A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 role_id = 'role_id_example' # str | The role ID
 page_count = 'page_count_example' # str | The number of pages returned for this request. (optional)
 page_number = 1 # int | **Deprecated.** We will no longer support this field in a future release. Instead, use the `next_page_token` for pagination. (optional) (default to 1)
@@ -376,21 +376,21 @@ List [roles](https://support.zoom.us/hc/en-us/articles/115001078646-Role-Based-A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 type = 'common' # str | Specify a value to get the response for the corresponding role type.         `common` - common roles of Zoom.    `iq` - roles of Zoom IQ Sales (optional) (default to common)
 
 try:
@@ -433,23 +433,23 @@ Each Zoom user automatically has a [role](https://support.zoom.us/hc/en-us/artic
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.RolesApi(zoom.ApiClient(configuration))
 role_id = 'role_id_example' # str | 
-body = swagger_client.RolesRoleIdBody() # RolesRoleIdBody |  (optional)
+body = zoom.RolesRoleIdBody() # RolesRoleIdBody |  (optional)
 
 try:
     # Update role information

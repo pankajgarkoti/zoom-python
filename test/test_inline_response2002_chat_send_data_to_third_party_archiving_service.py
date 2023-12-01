@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response2002_chat_send_data_to_third_party_archiving_service import InlineResponse2002ChatSendDataToThirdPartyArchivingService  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response2002_chat_send_data_to_third_party_archiving_service import InlineResponse2002ChatSendDataToThirdPartyArchivingService  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse2002ChatSendDataToThirdPartyArchivingService(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse2002ChatSendDataToThirdPartyArchivingService(unittest.Te
     def testInlineResponse2002ChatSendDataToThirdPartyArchivingService(self):
         """Test InlineResponse2002ChatSendDataToThirdPartyArchivingService"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response2002_chat_send_data_to_third_party_archiving_service.InlineResponse2002ChatSendDataToThirdPartyArchivingService()  # noqa: E501
+        # model = zoom.models.inline_response2002_chat_send_data_to_third_party_archiving_service.InlineResponse2002ChatSendDataToThirdPartyArchivingService()  # noqa: E501
         pass
 
 

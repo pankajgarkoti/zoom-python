@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20045_settings_approved_or_denied_countries_or_regions import InlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20045_settings_approved_or_denied_countries_or_regions import InlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions(unittest
     def testInlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions(self):
         """Test InlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20045_settings_approved_or_denied_countries_or_regions.InlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions()  # noqa: E501
+        # model = zoom.models.inline_response20045_settings_approved_or_denied_countries_or_regions.InlineResponse20045SettingsApprovedOrDeniedCountriesOrRegions()  # noqa: E501
         pass
 
 

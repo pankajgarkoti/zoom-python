@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.live_meetingsmeeting_idevents_params_sip_headers_additional_headers import LiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.live_meetingsmeeting_idevents_params_sip_headers_additional_headers import LiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestLiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders(unittest.
     def testLiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders(self):
         """Test LiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.live_meetingsmeeting_idevents_params_sip_headers_additional_headers.LiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders()  # noqa: E501
+        # model = zoom.models.live_meetingsmeeting_idevents_params_sip_headers_additional_headers.LiveMeetingsmeetingIdeventsParamsSipHeadersAdditionalHeaders()  # noqa: E501
         pass
 
 

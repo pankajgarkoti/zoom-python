@@ -1,4 +1,4 @@
-# swagger_client.TSPApi
+# zoom.TSPApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -24,21 +24,21 @@ Get information on Telephony Service Provider on an account level.         **Pre
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
 
 try:
     # Get account's TSP information
@@ -77,22 +77,22 @@ Update information of the Telephony Service Provider set up on an account.     *
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TspBody() # TspBody | TSP Account (optional)
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
+body = zoom.TspBody() # TspBody | TSP Account (optional)
 
 try:
     # Update account's TSP information
@@ -133,23 +133,23 @@ A global dial-in page can provide a list of global access numbers using which au
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
 user_id = 'user_id_example' # str | The userId or email address of the user.
-body = swagger_client.TSPGlobalDialInURLSetting() # TSPGlobalDialInURLSetting | Global dial-in URL of the user. (optional)
+body = zoom.TSPGlobalDialInURLSetting() # TSPGlobalDialInURLSetting | Global dial-in URL of the user. (optional)
 
 try:
     # Set global dial-in URL for a TSP user
@@ -191,22 +191,22 @@ Each user can have a maximum of two TSP accounts. Use this API to retrieve detai
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId4() # UserId4 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId4() # UserId4 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 tsp_id = 'tsp_id_example' # str | TSP account ID.
 
 try:
@@ -250,23 +250,23 @@ Add a user's TSP account.           **Scopes:** `tsp:write:admin`,`tsp:write`  *
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId3() # UserId3 | The user ID or email address of the user. For user-level apps, pass the `me` value.
-body = swagger_client.TSPAccountsList() # TSPAccountsList | TSP account. (optional)
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId3() # UserId3 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+body = zoom.TSPAccountsList() # TSPAccountsList | TSP account. (optional)
 
 try:
     # Add a user's TSP account
@@ -309,22 +309,22 @@ Delete a user's TSP account.           **Scopes:** `tsp:write:admin`,`tsp:write`
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId5() # UserId5 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId5() # UserId5 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 tsp_id = 'tsp_id_example' # str | TSP account ID.
 
 try:
@@ -367,24 +367,24 @@ Update a user's TSP account.           **Scopes:** `tsp:write:admin`,`tsp:write`
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId6() # UserId6 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId6() # UserId6 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 tsp_id = 'tsp_id_example' # str | TSP account ID.
-body = swagger_client.TSPAccount1() # TSPAccount1 | TSP account. (optional)
+body = zoom.TSPAccount1() # TSPAccount1 | TSP account. (optional)
 
 try:
     # Update a TSP account
@@ -427,22 +427,22 @@ A user can have a maximum of two TSP accounts. Use this API to list all TSP acco
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TSPApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.UserId2() # UserId2 | The user ID or email address of the user. For user-level apps, pass the `me` value.
+api_instance = zoom.TSPApi(zoom.ApiClient(configuration))
+user_id = zoom.UserId2() # UserId2 | The user ID or email address of the user. For user-level apps, pass the `me` value.
 
 try:
     # List user's TSP accounts

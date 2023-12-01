@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.user_settings_recording_settings_record_files_separately import UserSettingsRecordingSettingsRecordFilesSeparately  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.user_settings_recording_settings_record_files_separately import UserSettingsRecordingSettingsRecordFilesSeparately  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestUserSettingsRecordingSettingsRecordFilesSeparately(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUserSettingsRecordingSettingsRecordFilesSeparately(unittest.TestCase):
     def testUserSettingsRecordingSettingsRecordFilesSeparately(self):
         """Test UserSettingsRecordingSettingsRecordFilesSeparately"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.user_settings_recording_settings_record_files_separately.UserSettingsRecordingSettingsRecordFilesSeparately()  # noqa: E501
+        # model = zoom.models.user_settings_recording_settings_record_files_separately.UserSettingsRecordingSettingsRecordFilesSeparately()  # noqa: E501
         pass
 
 

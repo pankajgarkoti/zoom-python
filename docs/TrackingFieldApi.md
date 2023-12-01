@@ -1,4 +1,4 @@
-# swagger_client.TrackingFieldApi
+# zoom.TrackingFieldApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -21,22 +21,22 @@ Use this API to create a new [tracking field](https://support.zoom.us/hc/en-us/a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TrackingFieldApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TrackingField() # TrackingField | Tracking Field (optional)
+api_instance = zoom.TrackingFieldApi(zoom.ApiClient(configuration))
+body = zoom.TrackingField() # TrackingField | Tracking Field (optional)
 
 try:
     # Create a tracking field
@@ -78,21 +78,21 @@ Use this API to delete a [tracking field](https://support.zoom.us/hc/en-us/artic
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TrackingFieldApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.TrackingFieldApi(zoom.ApiClient(configuration))
 field_id = 'field_id_example' # str | The Tracking Field ID
 
 try:
@@ -134,21 +134,21 @@ Use this API to return information about a [tracking field](https://support.zoom
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TrackingFieldApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.TrackingFieldApi(zoom.ApiClient(configuration))
 field_id = 'field_id_example' # str | The Tracking Field ID
 
 try:
@@ -191,21 +191,21 @@ Use this API to list all the [tracking fields](https://support.zoom.us/hc/en-us/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TrackingFieldApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.TrackingFieldApi(zoom.ApiClient(configuration))
 
 try:
     # List tracking fields
@@ -244,23 +244,23 @@ Use this API to update a [tracking field](https://support.zoom.us/hc/en-us/artic
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.TrackingFieldApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.TrackingFieldApi(zoom.ApiClient(configuration))
 field_id = 'field_id_example' # str | The Tracking Field ID
-body = swagger_client.TrackingField2() # TrackingField2 |  (optional)
+body = zoom.TrackingField2() # TrackingField2 |  (optional)
 
 try:
     # Update a tracking field

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20045_settings_global_dial_in_numbers import InlineResponse20045SettingsGlobalDialInNumbers  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20045_settings_global_dial_in_numbers import InlineResponse20045SettingsGlobalDialInNumbers  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20045SettingsGlobalDialInNumbers(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20045SettingsGlobalDialInNumbers(unittest.TestCase):
     def testInlineResponse20045SettingsGlobalDialInNumbers(self):
         """Test InlineResponse20045SettingsGlobalDialInNumbers"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20045_settings_global_dial_in_numbers.InlineResponse20045SettingsGlobalDialInNumbers()  # noqa: E501
+        # model = zoom.models.inline_response20045_settings_global_dial_in_numbers.InlineResponse20045SettingsGlobalDialInNumbers()  # noqa: E501
         pass
 
 

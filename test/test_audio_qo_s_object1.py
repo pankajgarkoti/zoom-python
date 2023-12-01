@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.audio_qo_s_object1 import AudioQoSObject1  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.audio_qo_s_object1 import AudioQoSObject1  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAudioQoSObject1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAudioQoSObject1(unittest.TestCase):
     def testAudioQoSObject1(self):
         """Test AudioQoSObject1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.audio_qo_s_object1.AudioQoSObject1()  # noqa: E501
+        # model = zoom.models.audio_qo_s_object1.AudioQoSObject1()  # noqa: E501
         pass
 
 

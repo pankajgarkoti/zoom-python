@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20093_audio_conferencing_toll_free_and_fee_based_toll_call import InlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20093_audio_conferencing_toll_free_and_fee_based_toll_call import InlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall(unitte
     def testInlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall(self):
         """Test InlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20093_audio_conferencing_toll_free_and_fee_based_toll_call.InlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall()  # noqa: E501
+        # model = zoom.models.inline_response20093_audio_conferencing_toll_free_and_fee_based_toll_call.InlineResponse20093AudioConferencingTollFreeAndFeeBasedTollCall()  # noqa: E501
         pass
 
 

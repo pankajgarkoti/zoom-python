@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.pac_api import PACApi  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.api.pac_api import PACApi  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestPACApi(unittest.TestCase):

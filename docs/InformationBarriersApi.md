@@ -1,4 +1,4 @@
-# swagger_client.InformationBarriersApi
+# zoom.InformationBarriersApi
 
 All URIs are relative to *https://api.zoom.us/v2*
 
@@ -21,22 +21,22 @@ Create a new Information Barrier policy. [Information Barriers](https://support.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.InformationBarriersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InformationBarriersPoliciesBody() # InformationBarriersPoliciesBody | Information Barriers object (optional)
+api_instance = zoom.InformationBarriersApi(zoom.ApiClient(configuration))
+body = zoom.InformationBarriersPoliciesBody() # InformationBarriersPoliciesBody | Information Barriers object (optional)
 
 try:
     # Create an Information Barrier policy
@@ -78,21 +78,21 @@ Remove an [Information Barrier](https://support.zoom.us/hc/en-us/articles/360040
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.InformationBarriersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.InformationBarriersApi(zoom.ApiClient(configuration))
 policy_id = 'policy_id_example' # str | The Information Barriers policy's ID.
 
 try:
@@ -134,21 +134,21 @@ Return an [Information Barriers](https://support.zoom.us/hc/en-us/articles/36004
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.InformationBarriersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.InformationBarriersApi(zoom.ApiClient(configuration))
 policy_id = 'policy_id_example' # str | The Information Barrier policy's ID.
 
 try:
@@ -191,21 +191,21 @@ Return a list of all [Information Barriers](https://support.zoom.us/hc/en-us/art
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.InformationBarriersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.InformationBarriersApi(zoom.ApiClient(configuration))
 
 try:
     # List information Barrier policies
@@ -244,23 +244,23 @@ Update an [Information Barriers](https://support.zoom.us/hc/en-us/articles/36004
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import zoom
+from zoom.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: openapi_authorization
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 # Configure OAuth2 access token for authorization: openapi_oauth
-configuration = swagger_client.Configuration()
+configuration = zoom.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.InformationBarriersApi(swagger_client.ApiClient(configuration))
+api_instance = zoom.InformationBarriersApi(zoom.ApiClient(configuration))
 policy_id = 'policy_id_example' # str | The Information Barriers policy's ID.
-body = swagger_client.PoliciesPolicyIdBody() # PoliciesPolicyIdBody | Information about the updated Information Barriers policy. (optional)
+body = zoom.PoliciesPolicyIdBody() # PoliciesPolicyIdBody | Information about the updated Information Barriers policy. (optional)
 
 try:
     # Update an Information Barriers policy

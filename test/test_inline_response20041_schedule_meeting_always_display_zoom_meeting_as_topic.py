@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20041_schedule_meeting_always_display_zoom_meeting_as_topic import InlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20041_schedule_meeting_always_display_zoom_meeting_as_topic import InlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic(unit
     def testInlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic(self):
         """Test InlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20041_schedule_meeting_always_display_zoom_meeting_as_topic.InlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic()  # noqa: E501
+        # model = zoom.models.inline_response20041_schedule_meeting_always_display_zoom_meeting_as_topic.InlineResponse20041ScheduleMeetingAlwaysDisplayZoomMeetingAsTopic()  # noqa: E501
         pass
 
 

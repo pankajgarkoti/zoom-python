@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idsettings_recording_ip_address_access_control import AccountsaccountIdsettingsRecordingIpAddressAccessControl  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idsettings_recording_ip_address_access_control import AccountsaccountIdsettingsRecordingIpAddressAccessControl  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdsettingsRecordingIpAddressAccessControl(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdsettingsRecordingIpAddressAccessControl(unittest.Test
     def testAccountsaccountIdsettingsRecordingIpAddressAccessControl(self):
         """Test AccountsaccountIdsettingsRecordingIpAddressAccessControl"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idsettings_recording_ip_address_access_control.AccountsaccountIdsettingsRecordingIpAddressAccessControl()  # noqa: E501
+        # model = zoom.models.accountsaccount_idsettings_recording_ip_address_access_control.AccountsaccountIdsettingsRecordingIpAddressAccessControl()  # noqa: E501
         pass
 
 

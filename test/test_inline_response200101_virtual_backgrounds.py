@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response200101_virtual_backgrounds import InlineResponse200101VirtualBackgrounds  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response200101_virtual_backgrounds import InlineResponse200101VirtualBackgrounds  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse200101VirtualBackgrounds(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse200101VirtualBackgrounds(unittest.TestCase):
     def testInlineResponse200101VirtualBackgrounds(self):
         """Test InlineResponse200101VirtualBackgrounds"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response200101_virtual_backgrounds.InlineResponse200101VirtualBackgrounds()  # noqa: E501
+        # model = zoom.models.inline_response200101_virtual_backgrounds.InlineResponse200101VirtualBackgrounds()  # noqa: E501
         pass
 
 

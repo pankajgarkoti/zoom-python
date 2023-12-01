@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20122_settings_question_and_answer import InlineResponse20122SettingsQuestionAndAnswer  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20122_settings_question_and_answer import InlineResponse20122SettingsQuestionAndAnswer  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20122SettingsQuestionAndAnswer(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20122SettingsQuestionAndAnswer(unittest.TestCase):
     def testInlineResponse20122SettingsQuestionAndAnswer(self):
         """Test InlineResponse20122SettingsQuestionAndAnswer"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20122_settings_question_and_answer.InlineResponse20122SettingsQuestionAndAnswer()  # noqa: E501
+        # model = zoom.models.inline_response20122_settings_question_and_answer.InlineResponse20122SettingsQuestionAndAnswer()  # noqa: E501
         pass
 
 

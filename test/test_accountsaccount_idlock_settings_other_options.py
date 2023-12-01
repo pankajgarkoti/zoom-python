@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accountsaccount_idlock_settings_other_options import AccountsaccountIdlockSettingsOtherOptions  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.accountsaccount_idlock_settings_other_options import AccountsaccountIdlockSettingsOtherOptions  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestAccountsaccountIdlockSettingsOtherOptions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAccountsaccountIdlockSettingsOtherOptions(unittest.TestCase):
     def testAccountsaccountIdlockSettingsOtherOptions(self):
         """Test AccountsaccountIdlockSettingsOtherOptions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accountsaccount_idlock_settings_other_options.AccountsaccountIdlockSettingsOtherOptions()  # noqa: E501
+        # model = zoom.models.accountsaccount_idlock_settings_other_options.AccountsaccountIdlockSettingsOtherOptions()  # noqa: E501
         pass
 
 

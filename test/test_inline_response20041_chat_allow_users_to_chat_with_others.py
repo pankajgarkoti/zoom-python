@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20041_chat_allow_users_to_chat_with_others import InlineResponse20041ChatAllowUsersToChatWithOthers  # noqa: E501
-from swagger_client.rest import ApiException
+import zoom
+from zoom.models.inline_response20041_chat_allow_users_to_chat_with_others import InlineResponse20041ChatAllowUsersToChatWithOthers  # noqa: E501
+from zoom.rest import ApiException
 
 
 class TestInlineResponse20041ChatAllowUsersToChatWithOthers(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20041ChatAllowUsersToChatWithOthers(unittest.TestCase):
     def testInlineResponse20041ChatAllowUsersToChatWithOthers(self):
         """Test InlineResponse20041ChatAllowUsersToChatWithOthers"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20041_chat_allow_users_to_chat_with_others.InlineResponse20041ChatAllowUsersToChatWithOthers()  # noqa: E501
+        # model = zoom.models.inline_response20041_chat_allow_users_to_chat_with_others.InlineResponse20041ChatAllowUsersToChatWithOthers()  # noqa: E501
         pass
 
 
